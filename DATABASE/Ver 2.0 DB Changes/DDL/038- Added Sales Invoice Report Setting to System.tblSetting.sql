@@ -1,0 +1,1 @@
+Insert into System.tblSettings (Code,Name,Value) values ('SALES_REPORT_TYPE','Sales Report Type','General');

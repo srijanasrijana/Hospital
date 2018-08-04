@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsJournal" targetNamespace="http://tempuri.org/dsJournal.xsd" xmlns:mstns="http://tempuri.org/dsJournal.xsd" xmlns="http://tempuri.org/dsJournal.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsJournal" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsJournal" msprop:Generator_UserDSName="dsJournal">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblJournalMaster" msprop:Generator_TableClassName="tblJournalMasterDataTable" msprop:Generator_RowEvArgName="tblJournalMasterRowChangeEvent" msprop:Generator_TableVarName="tabletblJournalMaster" msprop:Generator_TablePropName="tblJournalMaster" msprop:Generator_RowDeletingName="tblJournalMasterRowDeleting" msprop:Generator_RowChangingName="tblJournalMasterRowChanging" msprop:Generator_RowDeletedName="tblJournalMasterRowDeleted" msprop:Generator_RowEvHandlerName="tblJournalMasterRowChangeEventHandler" msprop:Generator_RowChangedName="tblJournalMasterRowChanged" msprop:Generator_UserTableName="tblJournalMaster" msprop:Generator_RowClassName="tblJournalMasterRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SeriesName" msprop:Generator_ColumnVarNameInTable="columnSeriesName" msprop:Generator_ColumnPropNameInRow="SeriesName" msprop:Generator_ColumnPropNameInTable="SeriesNameColumn" msprop:Generator_UserColumnName="SeriesName" type="xs:string" minOccurs="0" />
+              <xs:element name="VoucherNo" msprop:Generator_ColumnVarNameInTable="columnVoucherNo" msprop:Generator_ColumnPropNameInRow="VoucherNo" msprop:Generator_ColumnPropNameInTable="VoucherNoColumn" msprop:Generator_UserColumnName="VoucherNo" type="xs:string" minOccurs="0" />
+              <xs:element name="Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInRow="Date" msprop:Generator_ColumnPropNameInTable="DateColumn" msprop:Generator_UserColumnName="Date" type="xs:string" minOccurs="0" />
+              <xs:element name="Remarks" msprop:Generator_ColumnVarNameInTable="columnRemarks" msprop:Generator_ColumnPropNameInRow="Remarks" msprop:Generator_ColumnPropNameInTable="RemarksColumn" msprop:Generator_UserColumnName="Remarks" type="xs:string" minOccurs="0" />
+              <xs:element name="ProjectName" msprop:Generator_ColumnVarNameInTable="columnProjectName" msprop:Generator_ColumnPropNameInRow="ProjectName" msprop:Generator_ColumnPropNameInTable="ProjectNameColumn" msprop:Generator_UserColumnName="ProjectName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblJournalDetails" msprop:Generator_TableClassName="tblJournalDetailsDataTable" msprop:Generator_RowEvArgName="tblJournalDetailsRowChangeEvent" msprop:Generator_TableVarName="tabletblJournalDetails" msprop:Generator_TablePropName="tblJournalDetails" msprop:Generator_RowDeletingName="tblJournalDetailsRowDeleting" msprop:Generator_RowChangingName="tblJournalDetailsRowChanging" msprop:Generator_RowDeletedName="tblJournalDetailsRowDeleted" msprop:Generator_RowEvHandlerName="tblJournalDetailsRowChangeEventHandler" msprop:Generator_RowChangedName="tblJournalDetailsRowChanged" msprop:Generator_UserTableName="tblJournalDetails" msprop:Generator_RowClassName="tblJournalDetailsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Account" msprop:Generator_ColumnVarNameInTable="columnAccount" msprop:Generator_ColumnPropNameInRow="Account" msprop:Generator_ColumnPropNameInTable="AccountColumn" msprop:Generator_UserColumnName="Account" type="xs:string" minOccurs="0" />
+              <xs:element name="LedgerFolioNo" msprop:Generator_ColumnVarNameInTable="columnLedgerFolioNo" msprop:Generator_ColumnPropNameInRow="LedgerFolioNo" msprop:Generator_ColumnPropNameInTable="LedgerFolioNoColumn" msprop:Generator_UserColumnName="LedgerFolioNo" type="xs:string" minOccurs="0" />
+              <xs:element name="BudgetHeadNo" msprop:Generator_ColumnVarNameInTable="columnBudgetHeadNo" msprop:Generator_ColumnPropNameInRow="BudgetHeadNo" msprop:Generator_ColumnPropNameInTable="BudgetHeadNoColumn" msprop:Generator_UserColumnName="BudgetHeadNo" type="xs:string" minOccurs="0" />
+              <xs:element name="DrAmount" msprop:Generator_ColumnVarNameInTable="columnDrAmount" msprop:Generator_ColumnPropNameInRow="DrAmount" msprop:Generator_ColumnPropNameInTable="DrAmountColumn" msprop:Generator_UserColumnName="DrAmount" type="xs:string" minOccurs="0" />
+              <xs:element name="CrAmount" msprop:Generator_ColumnVarNameInTable="columnCrAmount" msprop:Generator_ColumnPropNameInRow="CrAmount" msprop:Generator_ColumnPropNameInTable="CrAmountColumn" msprop:Generator_UserColumnName="CrAmount" type="xs:string" minOccurs="0" />
+              <xs:element name="Remarks" msprop:Generator_ColumnVarNameInTable="columnRemarks" msprop:Generator_ColumnPropNameInRow="Remarks" msprop:Generator_ColumnPropNameInTable="RemarksColumn" msprop:Generator_UserColumnName="Remarks" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblImage" msprop:Generator_TableClassName="tblImageDataTable" msprop:Generator_RowEvArgName="tblImageRowChangeEvent" msprop:Generator_TableVarName="tabletblImage" msprop:Generator_TablePropName="tblImage" msprop:Generator_RowDeletingName="tblImageRowDeleting" msprop:Generator_RowChangingName="tblImageRowChanging" msprop:Generator_RowDeletedName="tblImageRowDeleted" msprop:Generator_RowEvHandlerName="tblImageRowChangeEventHandler" msprop:Generator_RowChangedName="tblImageRowChanged" msprop:Generator_UserTableName="tblImage" msprop:Generator_RowClassName="tblImageRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Logo" msprop:Generator_ColumnVarNameInTable="columnLogo" msprop:Generator_ColumnPropNameInRow="Logo" msprop:Generator_ColumnPropNameInTable="LogoColumn" msprop:Generator_UserColumnName="Logo" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblJournalInfo" msprop:Generator_TableClassName="tblJournalInfoDataTable" msprop:Generator_TableVarName="tabletblJournalInfo" msprop:Generator_TablePropName="tblJournalInfo" msprop:Generator_RowDeletingName="tblJournalInfoRowDeleting" msprop:Generator_RowChangingName="tblJournalInfoRowChanging" msprop:Generator_RowEvHandlerName="tblJournalInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="tblJournalInfoRowDeleted" msprop:Generator_UserTableName="tblJournalInfo" msprop:Generator_RowChangedName="tblJournalInfoRowChanged" msprop:Generator_RowEvArgName="tblJournalInfoRowChangeEvent" msprop:Generator_RowClassName="tblJournalInfoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="JournalID" msprop:Generator_ColumnVarNameInTable="columnJournalID" msprop:Generator_ColumnPropNameInRow="JournalID" msprop:Generator_ColumnPropNameInTable="JournalIDColumn" msprop:Generator_UserColumnName="JournalID" type="xs:string" minOccurs="0" />
+              <xs:element name="Journal_Date" msprop:Generator_ColumnVarNameInTable="columnJournal_Date" msprop:Generator_ColumnPropNameInRow="Journal_Date" msprop:Generator_ColumnPropNameInTable="Journal_DateColumn" msprop:Generator_UserColumnName="Journal_Date" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

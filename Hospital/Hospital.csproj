@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F70E06C8-2CCD-42AE-99A3-0A1214E2A882}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hospital</RootNamespace>
+    <AssemblyName>Hospital</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accounts">
+      <HintPath>..\..\..\All C# SOFTWARE\AccSwift\Accounts.dll</HintPath>
+    </Reference>
+    <Reference Include="BarcodeLib">
+      <HintPath>..\DLLs\BarcodeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="CollapsibleSplitter, Version=1.3.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLs\CollapsibleSplitter.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Date, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\AccSwift\Accounts\bin\Release\Date.dll</HintPath>
+    </Reference>
+    <Reference Include="DBLogic, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\All C# SOFTWARE\AccSwift\DBLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="Inventory">
+      <HintPath>..\..\..\All C# SOFTWARE\AccSwift\Inventory.dll</HintPath>
+    </Reference>
+    <Reference Include="Language, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\All C# SOFTWARE\AccSwift\Language.dll</HintPath>
+    </Reference>
+    <Reference Include="SComponents, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\NewAccSwiftGeneral\Accounts\bin\Debug\SComponents.dll</HintPath>
+    </Reference>
+    <Reference Include="SourceGrid">
+      <HintPath>F:\NewAccSwiftGeneral\Accounts\bin\Debug\SourceGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\dsPatientGeneralReport.cs">
+      <DependentUpon>dsPatientGeneralReport.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\dsPatientGeneralReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPatientGeneralReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\dsPatientReportrpt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPatientReportrpt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rptPatient.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptPatient.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\frmDoctorList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmDoctorList.Designer.cs">
+      <DependentUpon>frmDoctorList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmDoctorPartTimeSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmDoctorPartTimeSalary.Designer.cs">
+      <DependentUpon>frmDoctorPartTimeSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmDoctorSalarySheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmDoctorSalarySheet.Designer.cs">
+      <DependentUpon>frmDoctorSalarySheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmDoctorFaculty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmDoctorFaculty.Designer.cs">
+      <DependentUpon>frmDoctorFaculty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmDoctorLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmDoctorLevel.Designer.cs">
+      <DependentUpon>frmDoctorLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmDoctorRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmDoctorRegistration.Designer.cs">
+      <DependentUpon>frmDoctorRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmHosDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmHosDepartment.Designer.cs">
+      <DependentUpon>frmHosDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmHosMasterSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmHosMasterSetup.Designer.cs">
+      <DependentUpon>frmHosMasterSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmHosSpecialization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmHosSpecialization.Designer.cs">
+      <DependentUpon>frmHosSpecialization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmListOfPatientInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmListOfPatientInfo.Designer.cs">
+      <DependentUpon>FrmListOfPatientInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmPatientRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmPatientRegistration.Designer.cs">
+      <DependentUpon>frmPatientRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmDiseasesSetUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmDiseasesSetUp.Designer.cs">
+      <DependentUpon>frmDiseasesSetUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmRecipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmRecipt.Designer.cs">
+      <DependentUpon>FrmRecipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Report\frmPatientReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Report\frmPatientReport.Designer.cs">
+      <DependentUpon>frmPatientReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Report\frmPatientSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Report\frmPatientSetting.Designer.cs">
+      <DependentUpon>frmPatientSetting.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report\dsPatientReportrpt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>dsPatientReportrpt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptPatient.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptPatient.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmDoctorList.resx">
+      <DependentUpon>frmDoctorList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmDoctorPartTimeSalary.resx">
+      <DependentUpon>frmDoctorPartTimeSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmDoctorSalarySheet.resx">
+      <DependentUpon>frmDoctorSalarySheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmDoctorFaculty.resx">
+      <DependentUpon>frmDoctorFaculty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmDoctorLevel.resx">
+      <DependentUpon>frmDoctorLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmDoctorRegistration.resx">
+      <DependentUpon>frmDoctorRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmHosDepartment.resx">
+      <DependentUpon>frmHosDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmHosMasterSetup.resx">
+      <DependentUpon>frmHosMasterSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmHosSpecialization.resx">
+      <DependentUpon>frmHosSpecialization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmListOfPatientInfo.resx">
+      <DependentUpon>FrmListOfPatientInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmPatientRegistration.resx">
+      <DependentUpon>frmPatientRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmDiseasesSetUp.resx">
+      <DependentUpon>frmDiseasesSetUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmRecipt.resx">
+      <DependentUpon>FrmRecipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Report\frmPatientReport.resx">
+      <DependentUpon>frmPatientReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Report\frmPatientSetting.resx">
+      <DependentUpon>frmPatientSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Model\dsPatientGeneralReport.xsc">
+      <DependentUpon>dsPatientGeneralReport.xsd</DependentUpon>
+    </None>
+    <None Include="Model\dsPatientGeneralReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPatientGeneralReport.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Model\dsPatientGeneralReport.xss">
+      <DependentUpon>dsPatientGeneralReport.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AccSwift\BusinessLogic\BusinessLogic.csproj">
+      <Project>{73a7bd02-02b2-42a1-96f7-f920e3e7d647}</Project>
+      <Name>BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{a9249327-361f-430e-996c-dabcf143946a}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,843 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7413F3E6-63A4-4FCA-AB9C-E5930910A649}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Inventory</RootNamespace>
+    <AssemblyName>AccSwift</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>AccSwift_Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\AccSwift.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\AccSwift.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BarcodeLib">
+      <HintPath>..\..\..\..\All C# SOFTWARE\AccSwift\BarcodeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="CollapsibleSplitter, Version=1.3.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLS\CollapsibleSplitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Crypto, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLs\Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Data.AdoDotNetInterop, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Date, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLS\Date.dll</HintPath>
+    </Reference>
+    <Reference Include="DBLogic, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLs\DBLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="DevAge.Core, Version=4.10.2845.21697, Culture=neutral, PublicKeyToken=faad465d84242dbf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLS\DevAge.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ErrorManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLs\ErrorManager.dll</HintPath>
+    </Reference>
+    <Reference Include="iGreen.Controls.uControls.uLabelX, Version=5.0.4769.38793, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLs\iGreen.Controls.uControls.uLabelX.dll</HintPath>
+    </Reference>
+    <Reference Include="INIFileParser">
+      <HintPath>..\DLLs\INIFileParser.dll</HintPath>
+    </Reference>
+    <Reference Include="Language">
+      <HintPath>..\DLLS\Language.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Registry, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLS\Registry.dll</HintPath>
+    </Reference>
+    <Reference Include="SComponents, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLs\SComponents.dll</HintPath>
+    </Reference>
+    <Reference Include="skybound.visualstyles, Version=1.2.0.0, Culture=neutral, PublicKeyToken=f2d73a45b3e75a83">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLS\skybound.visualstyles.dll</HintPath>
+    </Reference>
+    <Reference Include="SmartSolutions.Controls, Version=1.0.2904.17433, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLS\SmartSolutions.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="SmsClient">
+      <HintPath>..\DLLS\SmsClient.dll</HintPath>
+    </Reference>
+    <Reference Include="SourceGrid, Version=4.11.2887.1415, Culture=neutral, PublicKeyToken=df6f5e538749e85d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLS\SourceGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CrystalReports\CRtest.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRtest.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReports\rptAuditLog.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptAuditLog.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReports\rptLedgerDetails.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptLedgerDetails.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReports\rptSales.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptSales.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReports\rptStock.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptStock.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet\DatabaseSetup.cs" />
+    <Compile Include="DataSet\dsAuditLog.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsAuditLog.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsCompanyInfo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCompanyInfo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsLedgerDetails.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsLedgerDetails.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsSales.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSales.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTest.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTest.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Changepassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Changepassword.designer.cs">
+      <DependentUpon>Changepassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmActivate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmActivate.designer.cs">
+      <DependentUpon>frmActivate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAuditLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAuditLog.Designer.cs">
+      <DependentUpon>frmAuditLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmBackUpRestore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmBackUpRestore.Designer.cs">
+      <DependentUpon>frmBackUpRestore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmBarCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmBarCode.Designer.cs">
+      <DependentUpon>frmBarCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmbulksms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmbulksms.designer.cs">
+      <DependentUpon>frmbulksms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmChequeCashReminder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmChequeCashReminder.Designer.cs">
+      <DependentUpon>frmChequeCashReminder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCompanyFiscalYear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCompanyFiscalYear.Designer.cs">
+      <DependentUpon>frmCompanyFiscalYear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCompanyInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCompanyInfo.designer.cs">
+      <DependentUpon>frmCompanyInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCompanyOpen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCompanyOpen.Designer.cs">
+      <DependentUpon>frmCompanyOpen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCompoundUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCompoundUnit.Designer.cs">
+      <DependentUpon>frmCompoundUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDepot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDepot.Designer.cs">
+      <DependentUpon>frmDepot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmdepreciation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmdepreciation.Designer.cs">
+      <DependentUpon>frmdepreciation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmexportdatafromtally.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmexportdatafromtally.Designer.cs">
+      <DependentUpon>frmexportdatafromtally.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmfiscalyearclosing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmfiscalyearclosing.Designer.cs">
+      <DependentUpon>frmfiscalyearclosing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmFreeze.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmFreeze.Designer.cs">
+      <DependentUpon>frmFreeze.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmImportFromExcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmImportFromExcel.Designer.cs">
+      <DependentUpon>frmImportFromExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLedgerDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLedgerDetails.Designer.cs">
+      <DependentUpon>frmLedgerDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmNewCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmNewCompany.Designer.cs">
+      <DependentUpon>frmNewCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRecurrence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmRecurrence.designer.cs">
+      <DependentUpon>frmRecurrence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmReminder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmReminder.designer.cs">
+      <DependentUpon>frmReminder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmReminderList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmReminderList.designer.cs">
+      <DependentUpon>frmReminderList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSettings.Designer.cs">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmShortCutKeys.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmShortCutKeys.Designer.cs">
+      <DependentUpon>frmShortCutKeys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSnoozeReminder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSnoozeReminder.Designer.cs">
+      <DependentUpon>frmSnoozeReminder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTestCalculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTestCalculator.Designer.cs">
+      <DependentUpon>frmTestCalculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmUserEnableDisable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmUserEnableDisable.Designer.cs">
+      <DependentUpon>frmUserEnableDisable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmUserPreference.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmUserPreference.Designer.cs">
+      <DependentUpon>frmUserPreference.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAccessRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAccessRole.Designer.cs">
+      <DependentUpon>frmAccessRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLogin.designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLoginCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLoginCreate.designer.cs">
+      <DependentUpon>frmLoginCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmUnitMaitenace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmUnitMaitenace.Designer.cs">
+      <DependentUpon>frmUnitMaitenace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSplashScreen.designer.cs">
+      <DependentUpon>frmSplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MDIMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MDIMain.Designer.cs">
+      <DependentUpon>MDIMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Printer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Printer.Designer.cs">
+      <DependentUpon>Printer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Report\frmAuditLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Report\frmAuditLog.Designer.cs">
+      <DependentUpon>frmAuditLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDBConnect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDBConnect.Designer.cs">
+      <DependentUpon>frmDBConnect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
+    <EmbeddedResource Include="CrystalReports\CRtest.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRtest.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReports\rptAuditLog.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAuditLog.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReports\rptLedgerDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptLedgerDetails.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReports\rptSales.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSales.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReports\rptStock.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptStock.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Changepassword.resx">
+      <DependentUpon>Changepassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmActivate.resx">
+      <DependentUpon>frmActivate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAuditLog.resx">
+      <DependentUpon>frmAuditLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmBackUpRestore.resx">
+      <DependentUpon>frmBackUpRestore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmBarCode.resx">
+      <DependentUpon>frmBarCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmbulksms.resx">
+      <DependentUpon>frmbulksms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmChequeCashReminder.resx">
+      <DependentUpon>frmChequeCashReminder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCompanyFiscalYear.resx">
+      <DependentUpon>frmCompanyFiscalYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCompanyInfo.resx">
+      <DependentUpon>frmCompanyInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCompanyOpen.resx">
+      <DependentUpon>frmCompanyOpen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCompoundUnit.resx">
+      <DependentUpon>frmCompoundUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDepot.resx">
+      <DependentUpon>frmDepot.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmdepreciation.resx">
+      <DependentUpon>frmdepreciation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmexportdatafromtally.resx">
+      <DependentUpon>frmexportdatafromtally.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmfiscalyearclosing.resx">
+      <DependentUpon>frmfiscalyearclosing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmFreeze.resx">
+      <DependentUpon>frmFreeze.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmImportFromExcel.resx">
+      <DependentUpon>frmImportFromExcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLedgerDetails.resx">
+      <DependentUpon>frmLedgerDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmNewCompany.resx">
+      <DependentUpon>frmNewCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmRecurrence.resx">
+      <DependentUpon>frmRecurrence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmReminder.resx">
+      <DependentUpon>frmReminder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmReminderList.resx">
+      <DependentUpon>frmReminderList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSettings.resx">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmShortCutKeys.resx">
+      <DependentUpon>frmShortCutKeys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSnoozeReminder.resx">
+      <DependentUpon>frmSnoozeReminder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTestCalculator.resx">
+      <DependentUpon>frmTestCalculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmUserEnableDisable.resx">
+      <DependentUpon>frmUserEnableDisable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmUserPreference.resx">
+      <DependentUpon>frmUserPreference.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAccessRole.resx">
+      <DependentUpon>frmAccessRole.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLoginCreate.resx">
+      <DependentUpon>frmLoginCreate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmUnitMaitenace.resx">
+      <DependentUpon>frmUnitMaitenace.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSplashScreen.resx">
+      <DependentUpon>frmSplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MDIMain.resx">
+      <DependentUpon>MDIMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Printer.resx">
+      <DependentUpon>Printer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Report\frmAuditLog.resx">
+      <DependentUpon>frmAuditLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDBConnect.resx">
+      <DependentUpon>frmDBConnect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram2.cd" />
+    <None Include="DataSet\dsAuditLog.xsc">
+      <DependentUpon>dsAuditLog.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsAuditLog.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAuditLog.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsAuditLog.xss">
+      <DependentUpon>dsAuditLog.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsCompanyInfo.xsc">
+      <DependentUpon>dsCompanyInfo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsCompanyInfo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCompanyInfo.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsCompanyInfo.xss">
+      <DependentUpon>dsCompanyInfo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsLedgerDetails.xsc">
+      <DependentUpon>dsLedgerDetails.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsLedgerDetails.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsLedgerDetails.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsLedgerDetails.xss">
+      <DependentUpon>dsLedgerDetails.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTest.xsc">
+      <DependentUpon>dsTest.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTest.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTest.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsTest.xss">
+      <DependentUpon>dsTest.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DataSet\dsSales.xsc">
+      <DependentUpon>dsSales.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsSales.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSales.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsSales.xss">
+      <DependentUpon>dsSales.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\1296834456_xmag.png" />
+    <None Include="Resources\document_edit.png" />
+    <None Include="Resources\document_delete.png" />
+    <None Include="Resources\edit_add.png" />
+    <None Include="Resources\gnome_window_close.png" />
+    <None Include="Resources\left%282%29.ico" />
+    <None Include="Resources\left1.ico" />
+    <None Include="Resources\left1%282%29.ico" />
+    <None Include="Resources\1299891326_control_stop_000_small.ico" />
+    <None Include="Resources\dbsettings.jpg" />
+    <None Include="Resources\dbsettings1.jpg" />
+    <None Include="Resources\first.png" />
+    <None Include="Resources\forward.png" />
+    <None Include="Resources\last.png" />
+    <None Include="Resources\ExitButton.png" />
+    <None Include="Resources\ExitButton1.png" />
+    <None Include="Resources\ExitButton2.png" />
+    <None Include="Resources\copy.png" />
+    <Content Include="AccSwift_Icon.ico" />
+    <None Include="Resources\dateIcon.gif" />
+    <None Include="Resources\About_Us.jpg" />
+    <None Include="Resources\export.png" />
+    <None Include="Resources\export1.png" />
+    <None Include="Resources\company.png" />
+    <None Include="Resources\journalvoucherimage.png" />
+    <None Include="Resources\addicon.png" />
+    <None Include="Resources\5-v.jpg" />
+    <None Include="Resources\10-v.jpg" />
+    <None Include="Resources\50-v.jpg" />
+    <None Include="Resources\20-v.jpg" />
+    <None Include="Resources\100-v.jpg" />
+    <None Include="Resources\500-v.jpg" />
+    <None Include="Resources\1000-v.jpg" />
+    <None Include="Resources\add icon.png" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\AccSwift Logo_white-01.png" />
+    <None Include="Resources\Elegantthemes-Beautiful-Flat-One-Color-Compose.ico" />
+    <None Include="Resources\Elegantthemes-Beautiful-Flat-One-Color-Circlecompass.ico" />
+    <None Include="Resources\Elegantthemes-Beautiful-Flat-One-Color-Clipboard.ico" />
+    <None Include="Resources\Elegantthemes-Beautiful-Flat-One-Color-Compose1.ico" />
+    <None Include="Resources\Elegantthemes-Beautiful-Flat-One-Color-Contacts.ico" />
+    <Content Include="Resources\log.bmp" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\right1%282%29.ico" />
+    <None Include="Resources\print.ico" />
+    <None Include="Resources\paste1.png" />
+    <None Include="Resources\print_preview.png" />
+    <None Include="Resources\refresh.png" />
+    <None Include="Resources\progress.gif" />
+    <None Include="Resources\LoginFinal.png" />
+    <None Include="Resources\login.jpg" />
+    <None Include="Resources\LoginFinal 1.png" />
+    <None Include="Resources\LoginFinal 11.png" />
+    <None Include="Resources\LogInImage.png" />
+    <None Include="Resources\login.gif" />
+    <None Include="Resources\new window.png" />
+    <None Include="Resources\report-icon.gif" />
+    <None Include="Resources\splash1.bmp" />
+    <None Include="Resources\SplashPic.bmp" />
+    <None Include="Resources\SplashPic1.bmp" />
+    <None Include="Resources\tree expand.png" />
+    <None Include="Resources\tree.ico" />
+    <None Include="Resources\tree.png" />
+    <None Include="Resources\user_accept.png" />
+    <None Include="Resources\user_remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Accounts\Accounts.csproj">
+      <Project>{0b0dcb80-8ad5-4d6c-8835-72fd800b1760}</Project>
+      <Name>Accounts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Attendance And Leave\Attendance And Leave.csproj">
+      <Project>{2b7ace43-d1a7-4d7a-8af8-1d5cae511b0c}</Project>
+      <Name>Attendance And Leave</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{a9249327-361f-430e-996c-dabcf143946a}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hospital\Hospital.csproj">
+      <Project>{f70e06c8-2ccd-42ae-99a3-0a1214e2a882}</Project>
+      <Name>Hospital</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HRM\HRM.csproj">
+      <Project>{edcf0f2b-d923-4580-87d0-7bd9310ac014}</Project>
+      <Name>HRM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inventory\Inventory.csproj">
+      <Project>{675ef420-2094-4548-bd4a-5c0aaf12c7c0}</Project>
+      <Name>Inventory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POS\POS.csproj">
+      <Project>{67c10a79-bcc7-4d45-83b5-80ff2a7c6835}</Project>
+      <Name>POS</Name>
+    </ProjectReference>
+    <ProjectReference Include="BusinessLogic\BusinessLogic.csproj">
+      <Project>{73a7bd02-02b2-42a1-96f7-f920e3e7d647}</Project>
+      <Name>BusinessLogic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

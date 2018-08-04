@@ -1,0 +1,3 @@
+inv.tblproduct 
+	purchaserate
+	salesrate

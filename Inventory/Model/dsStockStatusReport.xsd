@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsStockStatusReport" targetNamespace="http://tempuri.org/dsStockStatusReport.xsd" xmlns:mstns="http://tempuri.org/dsStockStatusReport.xsd" xmlns="http://tempuri.org/dsStockStatusReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsStockStatusReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsStockStatusReport" msprop:Generator_UserDSName="dsStockStatusReport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblStockStatus" msprop:Generator_TableClassName="tblStockStatusDataTable" msprop:Generator_TableVarName="tabletblStockStatus" msprop:Generator_TablePropName="tblStockStatus" msprop:Generator_RowDeletingName="tblStockStatusRowDeleting" msprop:Generator_RowChangingName="tblStockStatusRowChanging" msprop:Generator_RowEvHandlerName="tblStockStatusRowChangeEventHandler" msprop:Generator_RowDeletedName="tblStockStatusRowDeleted" msprop:Generator_UserTableName="tblStockStatus" msprop:Generator_RowChangedName="tblStockStatusRowChanged" msprop:Generator_RowEvArgName="tblStockStatusRowChangeEvent" msprop:Generator_RowClassName="tblStockStatusRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SN" msprop:Generator_ColumnVarNameInTable="columnSN" msprop:Generator_ColumnPropNameInRow="SN" msprop:Generator_ColumnPropNameInTable="SNColumn" msprop:Generator_UserColumnName="SN" type="xs:string" minOccurs="0" />
+              <xs:element name="ProductID" msprop:Generator_ColumnVarNameInTable="columnProductID" msprop:Generator_ColumnPropNameInRow="ProductID" msprop:Generator_ColumnPropNameInTable="ProductIDColumn" msprop:Generator_UserColumnName="ProductID" type="xs:string" minOccurs="0" />
+              <xs:element name="ProductName" msprop:Generator_ColumnVarNameInTable="columnProductName" msprop:Generator_ColumnPropNameInRow="ProductName" msprop:Generator_ColumnPropNameInTable="ProductNameColumn" msprop:Generator_UserColumnName="ProductName" type="xs:string" minOccurs="0" />
+              <xs:element name="OpeningQty" msprop:Generator_ColumnVarNameInTable="columnOpeningQty" msprop:Generator_ColumnPropNameInRow="OpeningQty" msprop:Generator_ColumnPropNameInTable="OpeningQtyColumn" msprop:Generator_UserColumnName="OpeningQty" type="xs:string" minOccurs="0" />
+              <xs:element name="InBound" msprop:Generator_ColumnVarNameInTable="columnInBound" msprop:Generator_ColumnPropNameInRow="InBound" msprop:Generator_ColumnPropNameInTable="InBoundColumn" msprop:Generator_UserColumnName="InBound" type="xs:string" minOccurs="0" />
+              <xs:element name="OutBound" msprop:Generator_ColumnVarNameInTable="columnOutBound" msprop:Generator_ColumnPropNameInRow="OutBound" msprop:Generator_ColumnPropNameInTable="OutBoundColumn" msprop:Generator_UserColumnName="OutBound" type="xs:string" minOccurs="0" />
+              <xs:element name="ClosingQty" msprop:Generator_ColumnVarNameInTable="columnClosingQty" msprop:Generator_ColumnPropNameInRow="ClosingQty" msprop:Generator_ColumnPropNameInTable="ClosingQtyColumn" msprop:Generator_UserColumnName="ClosingQty" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblImage" msprop:Generator_TableClassName="tblImageDataTable" msprop:Generator_TableVarName="tabletblImage" msprop:Generator_TablePropName="tblImage" msprop:Generator_RowDeletingName="tblImageRowDeleting" msprop:Generator_RowChangingName="tblImageRowChanging" msprop:Generator_RowEvHandlerName="tblImageRowChangeEventHandler" msprop:Generator_RowDeletedName="tblImageRowDeleted" msprop:Generator_UserTableName="tblImage" msprop:Generator_RowChangedName="tblImageRowChanged" msprop:Generator_RowEvArgName="tblImageRowChangeEvent" msprop:Generator_RowClassName="tblImageRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Logo" msprop:Generator_ColumnVarNameInTable="columnLogo" msprop:Generator_ColumnPropNameInRow="Logo" msprop:Generator_ColumnPropNameInTable="LogoColumn" msprop:Generator_UserColumnName="Logo" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

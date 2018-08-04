@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsBalanceSheet" targetNamespace="http://tempuri.org/dsBalanceSheet.xsd" xmlns:mstns="http://tempuri.org/dsBalanceSheet.xsd" xmlns="http://tempuri.org/dsBalanceSheet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsBalanceSheet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsBalanceSheet" msprop:Generator_UserDSName="dsBalanceSheet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblImage" msprop:Generator_TableClassName="tblImageDataTable" msprop:Generator_RowEvArgName="tblImageRowChangeEvent" msprop:Generator_TableVarName="tabletblImage" msprop:Generator_TablePropName="tblImage" msprop:Generator_RowDeletingName="tblImageRowDeleting" msprop:Generator_RowChangingName="tblImageRowChanging" msprop:Generator_RowEvHandlerName="tblImageRowChangeEventHandler" msprop:Generator_RowDeletedName="tblImageRowDeleted" msprop:Generator_RowChangedName="tblImageRowChanged" msprop:Generator_UserTableName="tblImage" msprop:Generator_RowClassName="tblImageRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Logo" msprop:Generator_ColumnVarNameInTable="columnLogo" msprop:Generator_ColumnPropNameInRow="Logo" msprop:Generator_ColumnPropNameInTable="LogoColumn" msprop:Generator_UserColumnName="Logo" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblBalanceSheet" msprop:Generator_TableClassName="tblBalanceSheetDataTable" msprop:Generator_TableVarName="tabletblBalanceSheet" msprop:Generator_RowChangedName="tblBalanceSheetRowChanged" msprop:Generator_TablePropName="tblBalanceSheet" msprop:Generator_RowDeletingName="tblBalanceSheetRowDeleting" msprop:Generator_RowChangingName="tblBalanceSheetRowChanging" msprop:Generator_RowEvHandlerName="tblBalanceSheetRowChangeEventHandler" msprop:Generator_RowDeletedName="tblBalanceSheetRowDeleted" msprop:Generator_RowClassName="tblBalanceSheetRow" msprop:Generator_UserTableName="tblBalanceSheet" msprop:Generator_RowEvArgName="tblBalanceSheetRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BalanceSheetID" msprop:Generator_ColumnVarNameInTable="columnBalanceSheetID" msprop:Generator_ColumnPropNameInRow="BalanceSheetID" msprop:Generator_ColumnPropNameInTable="BalanceSheetIDColumn" msprop:Generator_UserColumnName="BalanceSheetID" type="xs:string" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" msprop:Generator_UserColumnName="Amount" type="xs:string" minOccurs="0" />
+              <xs:element name="GroupID" msprop:Generator_ColumnVarNameInTable="columnGroupID" msprop:Generator_ColumnPropNameInRow="GroupID" msprop:Generator_ColumnPropNameInTable="GroupIDColumn" msprop:Generator_UserColumnName="GroupID" type="xs:string" minOccurs="0" />
+              <xs:element name="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnPropNameInTable="TypeColumn" msprop:Generator_UserColumnName="Type" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblGroup" msprop:Generator_TableClassName="tblGroupDataTable" msprop:Generator_TableVarName="tabletblGroup" msprop:Generator_RowChangedName="tblGroupRowChanged" msprop:Generator_TablePropName="tblGroup" msprop:Generator_RowDeletingName="tblGroupRowDeleting" msprop:Generator_RowChangingName="tblGroupRowChanging" msprop:Generator_RowEvHandlerName="tblGroupRowChangeEventHandler" msprop:Generator_RowDeletedName="tblGroupRowDeleted" msprop:Generator_RowClassName="tblGroupRow" msprop:Generator_UserTableName="tblGroup" msprop:Generator_RowEvArgName="tblGroupRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GroupID" msprop:Generator_ColumnVarNameInTable="columnGroupID" msprop:Generator_ColumnPropNameInRow="GroupID" msprop:Generator_ColumnPropNameInTable="GroupIDColumn" msprop:Generator_UserColumnName="GroupID" type="xs:string" />
+              <xs:element name="GroupName" msprop:Generator_ColumnVarNameInTable="columnGroupName" msprop:Generator_ColumnPropNameInRow="GroupName" msprop:Generator_ColumnPropNameInTable="GroupNameColumn" msprop:Generator_UserColumnName="GroupName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblBalanceSheetStandard" msprop:Generator_TableClassName="tblBalanceSheetStandardDataTable" msprop:Generator_TableVarName="tabletblBalanceSheetStandard" msprop:Generator_RowChangedName="tblBalanceSheetStandardRowChanged" msprop:Generator_TablePropName="tblBalanceSheetStandard" msprop:Generator_RowDeletingName="tblBalanceSheetStandardRowDeleting" msprop:Generator_RowChangingName="tblBalanceSheetStandardRowChanging" msprop:Generator_RowEvHandlerName="tblBalanceSheetStandardRowChangeEventHandler" msprop:Generator_RowDeletedName="tblBalanceSheetStandardRowDeleted" msprop:Generator_RowClassName="tblBalanceSheetStandardRow" msprop:Generator_UserTableName="tblBalanceSheetStandard" msprop:Generator_RowEvArgName="tblBalanceSheetStandardRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BalanceSheetID" msprop:Generator_ColumnVarNameInTable="columnBalanceSheetID" msprop:Generator_ColumnPropNameInRow="BalanceSheetID" msprop:Generator_ColumnPropNameInTable="BalanceSheetIDColumn" msprop:Generator_UserColumnName="BalanceSheetID" type="xs:string" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" msprop:Generator_UserColumnName="Amount" type="xs:string" minOccurs="0" />
+              <xs:element name="GroupID" msprop:Generator_ColumnVarNameInTable="columnGroupID" msprop:Generator_ColumnPropNameInRow="GroupID" msprop:Generator_ColumnPropNameInTable="GroupIDColumn" msprop:Generator_UserColumnName="GroupID" type="xs:string" minOccurs="0" />
+              <xs:element name="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnPropNameInTable="TypeColumn" msprop:Generator_UserColumnName="Type" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblHeader" msprop:Generator_TableClassName="tblHeaderDataTable" msprop:Generator_TableVarName="tabletblHeader" msprop:Generator_RowChangedName="tblHeaderRowChanged" msprop:Generator_TablePropName="tblHeader" msprop:Generator_RowDeletingName="tblHeaderRowDeleting" msprop:Generator_RowChangingName="tblHeaderRowChanging" msprop:Generator_RowEvHandlerName="tblHeaderRowChangeEventHandler" msprop:Generator_RowDeletedName="tblHeaderRowDeleted" msprop:Generator_RowClassName="tblHeaderRow" msprop:Generator_UserTableName="tblHeader" msprop:Generator_RowEvArgName="tblHeaderRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="HeaderID" msprop:Generator_ColumnVarNameInTable="columnHeaderID" msprop:Generator_ColumnPropNameInRow="HeaderID" msprop:Generator_ColumnPropNameInTable="HeaderIDColumn" msprop:Generator_UserColumnName="HeaderID" type="xs:string" minOccurs="0" />
+              <xs:element name="HeaderName" msprop:Generator_ColumnVarNameInTable="columnHeaderName" msprop:Generator_ColumnPropNameInRow="HeaderName" msprop:Generator_ColumnPropNameInTable="HeaderNameColumn" msprop:Generator_UserColumnName="HeaderName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblGroupStandard" msprop:Generator_TableClassName="tblGroupStandardDataTable" msprop:Generator_TableVarName="tabletblGroupStandard" msprop:Generator_RowChangedName="tblGroupStandardRowChanged" msprop:Generator_TablePropName="tblGroupStandard" msprop:Generator_RowDeletingName="tblGroupStandardRowDeleting" msprop:Generator_RowChangingName="tblGroupStandardRowChanging" msprop:Generator_RowEvHandlerName="tblGroupStandardRowChangeEventHandler" msprop:Generator_RowDeletedName="tblGroupStandardRowDeleted" msprop:Generator_RowClassName="tblGroupStandardRow" msprop:Generator_UserTableName="tblGroupStandard" msprop:Generator_RowEvArgName="tblGroupStandardRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GroupID" msprop:Generator_ColumnVarNameInTable="columnGroupID" msprop:Generator_ColumnPropNameInRow="GroupID" msprop:Generator_ColumnPropNameInTable="GroupIDColumn" msprop:Generator_UserColumnName="GroupID" type="xs:string" minOccurs="0" />
+              <xs:element name="GroupName" msprop:Generator_ColumnVarNameInTable="columnGroupName" msprop:Generator_ColumnPropNameInRow="GroupName" msprop:Generator_ColumnPropNameInTable="GroupNameColumn" msprop:Generator_UserColumnName="GroupName" type="xs:string" minOccurs="0" />
+              <xs:element name="HeaderID" msprop:Generator_ColumnVarNameInTable="columnHeaderID" msprop:Generator_ColumnPropNameInRow="HeaderID" msprop:Generator_ColumnPropNameInTable="HeaderIDColumn" msprop:Generator_UserColumnName="HeaderID" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tblGroup" />
+      <xs:field xpath="mstns:GroupID" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="tblGroup_tblBalanceSheet" msdata:parent="tblGroup" msdata:child="tblBalanceSheet" msdata:parentkey="GroupID" msdata:childkey="GroupID" msprop:Generator_UserChildTable="tblBalanceSheet" msprop:Generator_ChildPropName="GettblBalanceSheetRows" msprop:Generator_UserRelationName="tblGroup_tblBalanceSheet" msprop:Generator_RelationVarName="relationtblGroup_tblBalanceSheet" msprop:Generator_UserParentTable="tblGroup" msprop:Generator_ParentPropName="tblGroupRow" />
+      <msdata:Relationship name="tblGroupStandard_tblBalanceSheetStandard" msdata:parent="tblGroupStandard" msdata:child="tblBalanceSheetStandard" msdata:parentkey="GroupID" msdata:childkey="GroupID" msprop:Generator_UserChildTable="tblBalanceSheetStandard" msprop:Generator_ChildPropName="GettblBalanceSheetStandardRows" msprop:Generator_UserRelationName="tblGroupStandard_tblBalanceSheetStandard" msprop:Generator_ParentPropName="tblGroupStandardRow" msprop:Generator_RelationVarName="relationtblGroupStandard_tblBalanceSheetStandard" msprop:Generator_UserParentTable="tblGroupStandard" />
+      <msdata:Relationship name="tblHeader_tblGroupStandard" msdata:parent="tblHeader" msdata:child="tblGroupStandard" msdata:parentkey="HeaderID" msdata:childkey="HeaderID" msprop:Generator_UserChildTable="tblGroupStandard" msprop:Generator_ChildPropName="GettblGroupStandardRows" msprop:Generator_UserRelationName="tblHeader_tblGroupStandard" msprop:Generator_RelationVarName="relationtblHeader_tblGroupStandard" msprop:Generator_UserParentTable="tblHeader" msprop:Generator_ParentPropName="tblHeaderRow" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

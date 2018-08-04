@@ -1,0 +1,759 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EDCF0F2B-D923-4580-87D0-7BD9310AC014}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HRM</RootNamespace>
+    <AssemblyName>HRM</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common">
+      <HintPath>..\..\..\..\All C# SOFTWARE\AccSwift\Common.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Design, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Date">
+      <HintPath>..\DLLs\Date.dll</HintPath>
+    </Reference>
+    <Reference Include="DBLogic">
+      <HintPath>..\DLLs\DBLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="DevAge.Core">
+      <HintPath>..\DLLs\DevAge.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ErrorManager">
+      <HintPath>..\DLLs\ErrorManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Language">
+      <HintPath>..\DLLs\Language.dll</HintPath>
+    </Reference>
+    <Reference Include="SComponents">
+      <HintPath>..\DLLs\SComponents.dll</HintPath>
+    </Reference>
+    <Reference Include="SourceGrid">
+      <HintPath>..\DLLs\SourceGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\dsDetailEmployeeReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDetailEmployeeReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Model\dsEmpAnnualReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEmpAnnualReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Model\dsEmployeeAdvance.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEmployeeAdvance.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Model\dsEmployeeCIT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEmployeeCIT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Model\dsEmployeeLoan.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEmployeeLoan.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Model\dsEmployeePatreon.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEmployeePatreon.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Model\dsEmployeePF.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEmployeePF.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Model\dsEmployeeTax.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEmployeeTax.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Model\dsEmployeeWelfare.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEmployeeWelfare.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Model\dsPartTimeSalary.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPartTimeSalary.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Model\dsPaySlip.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPaySlip.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Model\dsPensionFund.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPensionFund.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Model\dsSalaryList.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSalaryList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Model\dsSalarySheet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSalarySheet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Model\dsTaxAdjust.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTaxAdjust.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptDetailEmployee.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptDetailEmployee.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptEmpAnnualReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptEmpAnnualReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptEmployeeAdvance.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptEmployeeAdvance.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptEmployeeCIT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptEmployeeCIT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptEmployeeLoan.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptEmployeeLoan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptEmployeeLoanDetail.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptEmployeeLoanDetail.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptEmployeePatreonReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptEmployeePatreonReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptEmployeePF.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptEmployeePF.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptEmployeeTax.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptEmployeeTax.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptEmployeeWelfare.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptEmployeeWelfare.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptPartTimeSalary.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptPartTimeSalary.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptPaySlip.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptPaySlip.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptPensionFund.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptPensionFund.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptSalaryList.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptSalaryList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptSalarySheet.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptSalarySheet.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptTaxAdjustReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptTaxAdjustReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\frmAddition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmAddition.Designer.cs">
+      <DependentUpon>frmAddition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmAdvanceSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmAdvanceSearch.Designer.cs">
+      <DependentUpon>frmAdvanceSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmCountry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmCountry.Designer.cs">
+      <DependentUpon>frmCountry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmDepartment.Designer.cs">
+      <DependentUpon>frmDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmDesignation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmDesignation.Designer.cs">
+      <DependentUpon>frmDesignation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmEmpFaculty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmEmpFaculty.designer.cs">
+      <DependentUpon>frmEmpFaculty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmEmpLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmEmpLevel.designer.cs">
+      <DependentUpon>frmEmpLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmEmployeeRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmEmployeeRegistration.Designer.cs">
+      <DependentUpon>frmEmployeeRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmhrmmastersetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmhrmmastersetup.Designer.cs">
+      <DependentUpon>frmhrmmastersetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmListOfEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmListOfEmployee.designer.cs">
+      <DependentUpon>frmListOfEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmLoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmLoan.designer.cs">
+      <DependentUpon>frmLoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmPaySlip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmPaySlip.designer.cs">
+      <DependentUpon>frmPaySlip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmPTSalarySheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmPTSalarySheet.designer.cs">
+      <DependentUpon>frmPTSalarySheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmSalaryAdjustment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmSalaryAdjustment.designer.cs">
+      <DependentUpon>frmSalaryAdjustment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmSalaryJournalEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmSalaryJournalEntry.designer.cs">
+      <DependentUpon>frmSalaryJournalEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reports\frmCommonReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Reports\frmCommonReport.Designer.cs">
+      <DependentUpon>frmCommonReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reports\frmDetailEmployeeReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Reports\frmDetailEmployeeReport.Designer.cs">
+      <DependentUpon>frmDetailEmployeeReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reports\frmDetailEmployeeReportSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Reports\frmDetailEmployeeReportSettings.Designer.cs">
+      <DependentUpon>frmDetailEmployeeReportSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reports\frmEmployeeAdvance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Reports\frmEmployeeAdvance.Designer.cs">
+      <DependentUpon>frmEmployeeAdvance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reports\frmEmployeeAdvanceSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Reports\frmEmployeeAdvanceSettings.Designer.cs">
+      <DependentUpon>frmEmployeeAdvanceSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reports\frmEmployeeAnnualReportSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Reports\frmEmployeeAnnualReportSettings.Designer.cs">
+      <DependentUpon>frmEmployeeAnnualReportSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reports\frmEmployeeLoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Reports\frmEmployeeLoan.Designer.cs">
+      <DependentUpon>frmEmployeeLoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reports\frmEmployeeLoanSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Reports\frmEmployeeLoanSettings.Designer.cs">
+      <DependentUpon>frmEmployeeLoanSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reports\frmEmployeePF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Reports\frmEmployeePF.Designer.cs">
+      <DependentUpon>frmEmployeePF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reports\frmEmployeeReportSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Reports\frmEmployeeReportSettings.designer.cs">
+      <DependentUpon>frmEmployeeReportSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reports\frmSalaryList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Reports\frmSalaryList.Designer.cs">
+      <DependentUpon>frmSalaryList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reports\frmSalarySheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Reports\frmSalarySheet.Designer.cs">
+      <DependentUpon>frmSalarySheet.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controller\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptDetailEmployee.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDetailEmployee.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptEmpAnnualReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptEmpAnnualReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptEmployeeAdvance.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptEmployeeAdvance.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptEmployeeCIT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptEmployeeCIT.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptEmployeeLoan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptEmployeeLoan.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptEmployeeLoanDetail.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptEmployeeLoanDetail.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptEmployeePatreonReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptEmployeePatreonReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptEmployeePF.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptEmployeePF.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptEmployeeTax.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptEmployeeTax.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptEmployeeWelfare.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptEmployeeWelfare.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptPartTimeSalary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptPartTimeSalary.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptPaySlip.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptPaySlip.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptPensionFund.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptPensionFund.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptSalaryList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSalaryList.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptSalarySheet.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSalarySheet.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptTaxAdjustReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptTaxAdjustReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmAddition.resx">
+      <DependentUpon>frmAddition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmAdvanceSearch.resx">
+      <DependentUpon>frmAdvanceSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmCountry.resx">
+      <DependentUpon>frmCountry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmDepartment.resx">
+      <DependentUpon>frmDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmDesignation.resx">
+      <DependentUpon>frmDesignation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmEmpFaculty.resx">
+      <DependentUpon>frmEmpFaculty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmEmpLevel.resx">
+      <DependentUpon>frmEmpLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmEmployeeRegistration.resx">
+      <DependentUpon>frmEmployeeRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmhrmmastersetup.resx">
+      <DependentUpon>frmhrmmastersetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmListOfEmployee.resx">
+      <DependentUpon>frmListOfEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmLoan.resx">
+      <DependentUpon>frmLoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmPaySlip.resx">
+      <DependentUpon>frmPaySlip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmPTSalarySheet.resx">
+      <DependentUpon>frmPTSalarySheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmSalaryAdjustment.resx">
+      <DependentUpon>frmSalaryAdjustment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmSalaryJournalEntry.resx">
+      <DependentUpon>frmSalaryJournalEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Reports\frmCommonReport.resx">
+      <DependentUpon>frmCommonReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Reports\frmDetailEmployeeReport.resx">
+      <DependentUpon>frmDetailEmployeeReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Reports\frmDetailEmployeeReportSettings.resx">
+      <DependentUpon>frmDetailEmployeeReportSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Reports\frmEmployeeAdvance.resx">
+      <DependentUpon>frmEmployeeAdvance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Reports\frmEmployeeAdvanceSettings.resx">
+      <DependentUpon>frmEmployeeAdvanceSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Reports\frmEmployeeAnnualReportSettings.resx">
+      <DependentUpon>frmEmployeeAnnualReportSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Reports\frmEmployeeLoan.resx">
+      <DependentUpon>frmEmployeeLoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Reports\frmEmployeeLoanSettings.resx">
+      <DependentUpon>frmEmployeeLoanSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Reports\frmEmployeePF.resx">
+      <DependentUpon>frmEmployeePF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Reports\frmEmployeeReportSettings.resx">
+      <DependentUpon>frmEmployeeReportSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Reports\frmSalaryList.resx">
+      <DependentUpon>frmSalaryList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Reports\frmSalarySheet.resx">
+      <DependentUpon>frmSalarySheet.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Model\dsDetailEmployeeReport.xsc">
+      <DependentUpon>dsDetailEmployeeReport.xsd</DependentUpon>
+    </None>
+    <None Include="Model\dsDetailEmployeeReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDetailEmployeeReport.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Model\dsDetailEmployeeReport.xss">
+      <DependentUpon>dsDetailEmployeeReport.xsd</DependentUpon>
+    </None>
+    <None Include="Model\dsEmpAnnualReport.xsc">
+      <DependentUpon>dsEmpAnnualReport.xsd</DependentUpon>
+    </None>
+    <None Include="Model\dsEmpAnnualReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEmpAnnualReport.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Model\dsEmpAnnualReport.xss">
+      <DependentUpon>dsEmpAnnualReport.xsd</DependentUpon>
+    </None>
+    <None Include="Model\dsEmployeeAdvance.xsc">
+      <DependentUpon>dsEmployeeAdvance.xsd</DependentUpon>
+    </None>
+    <None Include="Model\dsEmployeeAdvance.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEmployeeAdvance.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Model\dsEmployeeAdvance.xss">
+      <DependentUpon>dsEmployeeAdvance.xsd</DependentUpon>
+    </None>
+    <None Include="Model\dsEmployeeCIT.xsc">
+      <DependentUpon>dsEmployeeCIT.xsd</DependentUpon>
+    </None>
+    <None Include="Model\dsEmployeeCIT.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEmployeeCIT.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Model\dsEmployeeCIT.xss">
+      <DependentUpon>dsEmployeeCIT.xsd</DependentUpon>
+    </None>
+    <None Include="Model\dsEmployeeLoan.xsc">
+      <DependentUpon>dsEmployeeLoan.xsd</DependentUpon>
+    </None>
+    <None Include="Model\dsEmployeeLoan.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEmployeeLoan.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Model\dsEmployeeLoan.xss">
+      <DependentUpon>dsEmployeeLoan.xsd</DependentUpon>
+    </None>
+    <None Include="Model\dsEmployeePatreon.xsc">
+      <DependentUpon>dsEmployeePatreon.xsd</DependentUpon>
+    </None>
+    <None Include="Model\dsEmployeePatreon.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEmployeePatreon.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Model\dsEmployeePatreon.xss">
+      <DependentUpon>dsEmployeePatreon.xsd</DependentUpon>
+    </None>
+    <None Include="Model\dsEmployeePF.xsc">
+      <DependentUpon>dsEmployeePF.xsd</DependentUpon>
+    </None>
+    <None Include="Model\dsEmployeePF.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEmployeePF.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Model\dsEmployeePF.xss">
+      <DependentUpon>dsEmployeePF.xsd</DependentUpon>
+    </None>
+    <None Include="Model\dsEmployeeTax.xsc">
+      <DependentUpon>dsEmployeeTax.xsd</DependentUpon>
+    </None>
+    <None Include="Model\dsEmployeeTax.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEmployeeTax.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Model\dsEmployeeTax.xss">
+      <DependentUpon>dsEmployeeTax.xsd</DependentUpon>
+    </None>
+    <None Include="Model\dsEmployeeWelfare.xsc">
+      <DependentUpon>dsEmployeeWelfare.xsd</DependentUpon>
+    </None>
+    <None Include="Model\dsEmployeeWelfare.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEmployeeWelfare.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Model\dsEmployeeWelfare.xss">
+      <DependentUpon>dsEmployeeWelfare.xsd</DependentUpon>
+    </None>
+    <None Include="Model\dsPartTimeSalary.xsc">
+      <DependentUpon>dsPartTimeSalary.xsd</DependentUpon>
+    </None>
+    <None Include="Model\dsPartTimeSalary.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPartTimeSalary.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Model\dsPartTimeSalary.xss">
+      <DependentUpon>dsPartTimeSalary.xsd</DependentUpon>
+    </None>
+    <None Include="Model\dsPaySlip.xsc">
+      <DependentUpon>dsPaySlip.xsd</DependentUpon>
+    </None>
+    <None Include="Model\dsPaySlip.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPaySlip.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Model\dsPaySlip.xss">
+      <DependentUpon>dsPaySlip.xsd</DependentUpon>
+    </None>
+    <None Include="Model\dsPensionFund.xsc">
+      <DependentUpon>dsPensionFund.xsd</DependentUpon>
+    </None>
+    <None Include="Model\dsPensionFund.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPensionFund.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Model\dsPensionFund.xss">
+      <DependentUpon>dsPensionFund.xsd</DependentUpon>
+    </None>
+    <None Include="Model\dsSalaryList.xsc">
+      <DependentUpon>dsSalaryList.xsd</DependentUpon>
+    </None>
+    <None Include="Model\dsSalaryList.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSalaryList.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Model\dsSalaryList.xss">
+      <DependentUpon>dsSalaryList.xsd</DependentUpon>
+    </None>
+    <None Include="Model\dsSalarySheet.xsc">
+      <DependentUpon>dsSalarySheet.xsd</DependentUpon>
+    </None>
+    <None Include="Model\dsSalarySheet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSalarySheet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Model\dsSalarySheet.xss">
+      <DependentUpon>dsSalarySheet.xsd</DependentUpon>
+    </None>
+    <None Include="Model\dsTaxAdjust.xsc">
+      <DependentUpon>dsTaxAdjust.xsd</DependentUpon>
+    </None>
+    <None Include="Model\dsTaxAdjust.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTaxAdjust.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Model\dsTaxAdjust.xss">
+      <DependentUpon>dsTaxAdjust.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AccSwift\BusinessLogic\BusinessLogic.csproj">
+      <Project>{73a7bd02-02b2-42a1-96f7-f920e3e7d647}</Project>
+      <Name>BusinessLogic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

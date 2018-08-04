@@ -1,0 +1,1 @@
+update Acc.tblTransaction set LedgerID=5646 where LedgerID=412 and (VoucherType='PURCH' or VoucherType='PURCH_RTN')

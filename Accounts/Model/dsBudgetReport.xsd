@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsBudgetReport" targetNamespace="http://tempuri.org/dsBudgetReport.xsd" xmlns:mstns="http://tempuri.org/dsBudgetReport.xsd" xmlns="http://tempuri.org/dsBudgetReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsBudgetReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsBudgetReport" msprop:Generator_UserDSName="dsBudgetReport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblImage" msprop:Generator_TableClassName="tblImageDataTable" msprop:Generator_TableVarName="tabletblImage" msprop:Generator_TablePropName="tblImage" msprop:Generator_RowDeletingName="tblImageRowDeleting" msprop:Generator_RowChangingName="tblImageRowChanging" msprop:Generator_RowEvHandlerName="tblImageRowChangeEventHandler" msprop:Generator_RowDeletedName="tblImageRowDeleted" msprop:Generator_UserTableName="tblImage" msprop:Generator_RowChangedName="tblImageRowChanged" msprop:Generator_RowEvArgName="tblImageRowChangeEvent" msprop:Generator_RowClassName="tblImageRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Logo" msprop:Generator_ColumnVarNameInTable="columnLogo" msprop:Generator_ColumnPropNameInRow="Logo" msprop:Generator_ColumnPropNameInTable="LogoColumn" msprop:Generator_UserColumnName="Logo" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblBudgetReport" msprop:Generator_TableClassName="tblBudgetReportDataTable" msprop:Generator_TableVarName="tabletblBudgetReport" msprop:Generator_TablePropName="tblBudgetReport" msprop:Generator_RowDeletingName="tblBudgetReportRowDeleting" msprop:Generator_RowChangingName="tblBudgetReportRowChanging" msprop:Generator_RowEvHandlerName="tblBudgetReportRowChangeEventHandler" msprop:Generator_RowDeletedName="tblBudgetReportRowDeleted" msprop:Generator_UserTableName="tblBudgetReport" msprop:Generator_RowChangedName="tblBudgetReportRowChanged" msprop:Generator_RowEvArgName="tblBudgetReportRowChangeEvent" msprop:Generator_RowClassName="tblBudgetReportRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AccountName" msprop:Generator_ColumnVarNameInTable="columnAccountName" msprop:Generator_ColumnPropNameInRow="AccountName" msprop:Generator_ColumnPropNameInTable="AccountNameColumn" msprop:Generator_UserColumnName="AccountName" type="xs:string" minOccurs="0" />
+              <xs:element name="AccountType" msprop:Generator_ColumnVarNameInTable="columnAccountType" msprop:Generator_ColumnPropNameInRow="AccountType" msprop:Generator_ColumnPropNameInTable="AccountTypeColumn" msprop:Generator_UserColumnName="AccountType" type="xs:string" minOccurs="0" />
+              <xs:element name="PeriodBudget" msprop:Generator_ColumnVarNameInTable="columnPeriodBudget" msprop:Generator_ColumnPropNameInRow="PeriodBudget" msprop:Generator_ColumnPropNameInTable="PeriodBudgetColumn" msprop:Generator_UserColumnName="PeriodBudget" type="xs:double" minOccurs="0" />
+              <xs:element name="PeriodActual" msprop:Generator_ColumnVarNameInTable="columnPeriodActual" msprop:Generator_ColumnPropNameInRow="PeriodActual" msprop:Generator_ColumnPropNameInTable="PeriodActualColumn" msprop:Generator_UserColumnName="PeriodActual" type="xs:double" minOccurs="0" />
+              <xs:element name="Variance" msprop:Generator_ColumnVarNameInTable="columnVariance" msprop:Generator_ColumnPropNameInRow="Variance" msprop:Generator_ColumnPropNameInTable="VarianceColumn" msprop:Generator_UserColumnName="Variance" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

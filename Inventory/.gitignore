@@ -1,0 +1,26 @@
+#Database Configuration for debug
+database.ini
+
+#Runtime folders
+/AccSwift/bin
+/AccSwift/BusinessLogic/bin
+/AccSwift/BusinessLogic/obj
+/AccSwift/obj
+/AccSwift/Accounting/bin
+/AccSwift/Accounting/obj
+/Inventory/bin
+/Inventory/obj
+/Interface/bin
+/Interface/obj
+/Common/bin
+/Common/obj
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

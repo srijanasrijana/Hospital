@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2B7ACE43-D1A7-4D7A-8AF8-1D5CAE511B0C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Attendance_And_Leave</RootNamespace>
+    <AssemblyName>Attendance And Leave</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Date">
+      <HintPath>..\DLLs\Date.dll</HintPath>
+    </Reference>
+    <Reference Include="DBLogic">
+      <HintPath>..\DLLs\DBLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="DevAge.Core">
+      <HintPath>..\DLLs\DevAge.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ErrorManager">
+      <HintPath>..\DLLs\ErrorManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Language">
+      <HintPath>..\DLLs\Language.dll</HintPath>
+    </Reference>
+    <Reference Include="SComponents">
+      <HintPath>..\DLLs\SComponents.dll</HintPath>
+    </Reference>
+    <Reference Include="SourceGrid">
+      <HintPath>..\DLLs\SourceGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Model\dsOfficeCalender.cs">
+      <DependentUpon>dsOfficeCalender.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Model\dsOfficeCalender.Designer.cs">
+      <DependentUpon>dsOfficeCalender.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\rptofficecalender.cs">
+      <DependentUpon>rptofficecalender.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="View\frmleaveapproval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmleaveapproval.Designer.cs">
+      <DependentUpon>frmleaveapproval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmLeaveRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmLeaveRequest.Designer.cs">
+      <DependentUpon>frmLeaveRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmLeaveSetUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmLeaveSetUp.Designer.cs">
+      <DependentUpon>frmLeaveSetUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmOfficeCalander.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmOfficeCalander.Designer.cs">
+      <DependentUpon>frmOfficeCalander.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Model\dsOfficeCalender.xsc">
+      <DependentUpon>dsOfficeCalender.xsd</DependentUpon>
+    </None>
+    <None Include="Model\dsOfficeCalender.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsOfficeCalender.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Model\dsOfficeCalender.xss">
+      <DependentUpon>dsOfficeCalender.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\rptofficecalender.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptofficecalender.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmleaveapproval.resx">
+      <DependentUpon>frmleaveapproval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmLeaveRequest.resx">
+      <DependentUpon>frmLeaveRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmLeaveSetUp.resx">
+      <DependentUpon>frmLeaveSetUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmOfficeCalander.resx">
+      <DependentUpon>frmOfficeCalander.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controller\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AccSwift\BusinessLogic\BusinessLogic.csproj">
+      <Project>{73a7bd02-02b2-42a1-96f7-f920e3e7d647}</Project>
+      <Name>BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{a9249327-361f-430e-996c-dabcf143946a}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,308 @@
+G:\ACCSwift\NewAccSwiftGeneral\Hospital\bin\Release\Hospital.exe.config
+G:\ACCSwift\NewAccSwiftGeneral\Hospital\bin\Release\Hospital.exe
+G:\ACCSwift\NewAccSwiftGeneral\Hospital\bin\Release\Hospital.pdb
+G:\ACCSwift\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.csprojResolveAssemblyReference.cache
+G:\ACCSwift\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.Properties.Resources.resources
+G:\ACCSwift\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.csproj.GenerateResource.Cache
+G:\ACCSwift\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.exe
+G:\ACCSwift\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.pdb
+G:\ACCSwift\NewAccSwiftGeneral\Hospital\bin\Release\BusinessLogic.dll
+G:\ACCSwift\NewAccSwiftGeneral\Hospital\bin\Release\DBLogic.dll
+G:\ACCSwift\NewAccSwiftGeneral\Hospital\bin\Release\Date.dll
+G:\ACCSwift\NewAccSwiftGeneral\Hospital\bin\Release\Registry.dll
+G:\ACCSwift\NewAccSwiftGeneral\Hospital\bin\Release\Crypto.dll
+G:\ACCSwift\NewAccSwiftGeneral\Hospital\bin\Release\Language.dll
+G:\ACCSwift\NewAccSwiftGeneral\Hospital\bin\Release\BusinessLogic.pdb
+G:\ACCSwift\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmHosDepartment.resources
+G:\ACCSwift\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmHosMasterSetup.resources
+G:\ACCSwift\NewAccSwiftGeneral\Hospital\bin\Release\SourceGrid.dll
+G:\ACCSwift\NewAccSwiftGeneral\Hospital\bin\Release\SourceGrid.xml
+G:\ACCSwift\NewAccSwiftGeneral\Hospital\bin\Release\SComponents.dll
+G:\ACCSwift\NewAccSwiftGeneral\Hospital\bin\Release\Skybound.VisualStyles.dll
+G:\ACCSwift\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmHosSpecialization.resources
+G:\ACCSwift\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorFaculty.resources
+G:\ACCSwift\NewAccSwiftGeneral\Hospital\bin\Release\Common.dll
+G:\ACCSwift\NewAccSwiftGeneral\Hospital\bin\Release\Common.pdb
+G:\ACCSwift\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorRegistration.resources
+G:\ACCSwift\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmHosDiseases.resources
+G:\ACCSwift\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmPatientRegistration.resources
+G:\ACCSwift\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmSenseOrgan.resources
+G:\ACCSwift\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmViewListofOrgans.resources
+G:\ACCSwift\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDiseaseList.resources
+G:\ACCSwift\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDiseases.resources
+G:\ACCSwift\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDiseasesGroup.resources
+G:\ACCSwift\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDisesesSetup.resources
+G:\ACCSwift\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.HosDiseasesSetUp.resources
+G:\ACCSwift\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmAdvanceSearch.resources
+G:\ACCSwift\monday\NewAccSwiftGeneral\Hospital\bin\Release\Hospital.exe.config
+G:\ACCSwift\monday\NewAccSwiftGeneral\Hospital\bin\Release\Hospital.exe
+G:\ACCSwift\monday\NewAccSwiftGeneral\Hospital\bin\Release\Hospital.pdb
+G:\ACCSwift\monday\NewAccSwiftGeneral\Hospital\bin\Release\BusinessLogic.dll
+G:\ACCSwift\monday\NewAccSwiftGeneral\Hospital\bin\Release\Common.dll
+G:\ACCSwift\monday\NewAccSwiftGeneral\Hospital\bin\Release\SComponents.dll
+G:\ACCSwift\monday\NewAccSwiftGeneral\Hospital\bin\Release\SourceGrid.dll
+G:\ACCSwift\monday\NewAccSwiftGeneral\Hospital\bin\Release\DBLogic.dll
+G:\ACCSwift\monday\NewAccSwiftGeneral\Hospital\bin\Release\Registry.dll
+G:\ACCSwift\monday\NewAccSwiftGeneral\Hospital\bin\Release\Crypto.dll
+G:\ACCSwift\monday\NewAccSwiftGeneral\Hospital\bin\Release\Language.dll
+G:\ACCSwift\monday\NewAccSwiftGeneral\Hospital\bin\Release\Skybound.VisualStyles.dll
+G:\ACCSwift\monday\NewAccSwiftGeneral\Hospital\bin\Release\BusinessLogic.pdb
+G:\ACCSwift\monday\NewAccSwiftGeneral\Hospital\bin\Release\Common.pdb
+G:\ACCSwift\monday\NewAccSwiftGeneral\Hospital\bin\Release\SourceGrid.xml
+G:\ACCSwift\monday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.csprojResolveAssemblyReference.cache
+G:\ACCSwift\monday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.Properties.Resources.resources
+G:\ACCSwift\monday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmAdvanceSearch.resources
+G:\ACCSwift\monday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDiseaseList.resources
+G:\ACCSwift\monday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDiseases.resources
+G:\ACCSwift\monday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDiseasesGroup.resources
+G:\ACCSwift\monday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDisesesSetup.resources
+G:\ACCSwift\monday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorFaculty.resources
+G:\ACCSwift\monday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorRegistration.resources
+G:\ACCSwift\monday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmHosDepartment.resources
+G:\ACCSwift\monday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmHosDiseases.resources
+G:\ACCSwift\monday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmHosMasterSetup.resources
+G:\ACCSwift\monday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmHosSpecialization.resources
+G:\ACCSwift\monday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmPatientRegistration.resources
+G:\ACCSwift\monday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmSenseOrgan.resources
+G:\ACCSwift\monday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmViewListofOrgans.resources
+G:\ACCSwift\monday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.HosDiseasesSetUp.resources
+G:\ACCSwift\monday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.csproj.GenerateResource.Cache
+G:\ACCSwift\monday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.exe
+G:\ACCSwift\monday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.pdb
+G:\ACCSwift\monday\Wednesday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.csprojResolveAssemblyReference.cache
+G:\ACCSwift\monday\Wednesday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.Properties.Resources.resources
+G:\ACCSwift\monday\Wednesday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmAdvanceSearch.resources
+G:\ACCSwift\monday\Wednesday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDiseaseList.resources
+G:\ACCSwift\monday\Wednesday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDiseases.resources
+G:\ACCSwift\monday\Wednesday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDiseasesGroup.resources
+G:\ACCSwift\monday\Wednesday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorFaculty.resources
+G:\ACCSwift\monday\Wednesday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorRegistration.resources
+G:\ACCSwift\monday\Wednesday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmHosDepartment.resources
+G:\ACCSwift\monday\Wednesday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmHosDiseases.resources
+G:\ACCSwift\monday\Wednesday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmHosMasterSetup.resources
+G:\ACCSwift\monday\Wednesday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmHosSpecialization.resources
+G:\ACCSwift\monday\Wednesday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmPatientRegistration.resources
+G:\ACCSwift\monday\Wednesday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmSenseOrgan.resources
+G:\ACCSwift\monday\Wednesday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmViewListofOrgans.resources
+G:\ACCSwift\monday\Wednesday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.csproj.GenerateResource.Cache
+G:\ACCSwift\monday\Wednesday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.exe
+G:\ACCSwift\monday\Wednesday\NewAccSwiftGeneral\Hospital\bin\Release\Hospital.exe.config
+G:\ACCSwift\monday\Wednesday\NewAccSwiftGeneral\Hospital\bin\Release\Hospital.exe
+G:\ACCSwift\monday\Wednesday\NewAccSwiftGeneral\Hospital\bin\Release\Hospital.pdb
+G:\ACCSwift\monday\Wednesday\NewAccSwiftGeneral\Hospital\bin\Release\BusinessLogic.dll
+G:\ACCSwift\monday\Wednesday\NewAccSwiftGeneral\Hospital\bin\Release\Common.dll
+G:\ACCSwift\monday\Wednesday\NewAccSwiftGeneral\Hospital\bin\Release\SComponents.dll
+G:\ACCSwift\monday\Wednesday\NewAccSwiftGeneral\Hospital\bin\Release\SourceGrid.dll
+G:\ACCSwift\monday\Wednesday\NewAccSwiftGeneral\Hospital\bin\Release\DBLogic.dll
+G:\ACCSwift\monday\Wednesday\NewAccSwiftGeneral\Hospital\bin\Release\Registry.dll
+G:\ACCSwift\monday\Wednesday\NewAccSwiftGeneral\Hospital\bin\Release\Crypto.dll
+G:\ACCSwift\monday\Wednesday\NewAccSwiftGeneral\Hospital\bin\Release\Language.dll
+G:\ACCSwift\monday\Wednesday\NewAccSwiftGeneral\Hospital\bin\Release\Skybound.VisualStyles.dll
+G:\ACCSwift\monday\Wednesday\NewAccSwiftGeneral\Hospital\bin\Release\BusinessLogic.pdb
+G:\ACCSwift\monday\Wednesday\NewAccSwiftGeneral\Hospital\bin\Release\Common.pdb
+G:\ACCSwift\monday\Wednesday\NewAccSwiftGeneral\Hospital\bin\Release\SourceGrid.xml
+G:\ACCSwift\monday\Wednesday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorLevel.resources
+G:\ACCSwift\monday\Wednesday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.pdb
+G:\ACCSwift\monday\Wednesday\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDiseasesSetUp.resources
+G:\ALL ACCSwift\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\Hospital.exe.config
+G:\ALL ACCSwift\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\Hospital.exe
+G:\ALL ACCSwift\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\Hospital.pdb
+G:\ALL ACCSwift\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\BusinessLogic.dll
+G:\ALL ACCSwift\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\Common.dll
+G:\ALL ACCSwift\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\SComponents.dll
+G:\ALL ACCSwift\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\SourceGrid.dll
+G:\ALL ACCSwift\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\DBLogic.dll
+G:\ALL ACCSwift\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\Registry.dll
+G:\ALL ACCSwift\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\Crypto.dll
+G:\ALL ACCSwift\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\Language.dll
+G:\ALL ACCSwift\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\Skybound.VisualStyles.dll
+G:\ALL ACCSwift\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\BusinessLogic.pdb
+G:\ALL ACCSwift\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\Common.pdb
+G:\ALL ACCSwift\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\SourceGrid.xml
+G:\ALL ACCSwift\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.csprojResolveAssemblyReference.cache
+G:\ALL ACCSwift\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.Properties.Resources.resources
+G:\ALL ACCSwift\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorFaculty.resources
+G:\ALL ACCSwift\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorLevel.resources
+G:\ALL ACCSwift\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorRegistration.resources
+G:\ALL ACCSwift\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmHosDepartment.resources
+G:\ALL ACCSwift\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmHosMasterSetup.resources
+G:\ALL ACCSwift\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmHosSpecialization.resources
+G:\ALL ACCSwift\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmPatientRegistration.resources
+G:\ALL ACCSwift\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDiseasesSetUp.resources
+G:\ALL ACCSwift\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.csproj.GenerateResource.Cache
+G:\ALL ACCSwift\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.exe
+G:\ALL ACCSwift\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.pdb
+G:\ALL ACCSwift\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmListOfDoctor.resources
+G:\ALL ACCSwift\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorList.resources
+G:\ALL ACCSwift\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorPartTimeSalary.resources
+G:\ALL ACCSwift\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorSalarySheet.resources
+G:\ALL ACCSwift\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.FrmPatientsDoctor.resources
+C:\Users\srijana\Desktop\Tuesday\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.csprojResolveAssemblyReference.cache
+C:\Users\srijana\Desktop\Tuesday\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.Properties.Resources.resources
+C:\Users\srijana\Desktop\Tuesday\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorList.resources
+C:\Users\srijana\Desktop\Tuesday\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorPartTimeSalary.resources
+C:\Users\srijana\Desktop\Tuesday\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorSalarySheet.resources
+C:\Users\srijana\Desktop\Tuesday\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorFaculty.resources
+C:\Users\srijana\Desktop\Tuesday\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorLevel.resources
+C:\Users\srijana\Desktop\Tuesday\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorRegistration.resources
+C:\Users\srijana\Desktop\Tuesday\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmHosDepartment.resources
+C:\Users\srijana\Desktop\Tuesday\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmHosMasterSetup.resources
+C:\Users\srijana\Desktop\Tuesday\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmHosSpecialization.resources
+C:\Users\srijana\Desktop\Tuesday\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.FrmListOfPatientInfo.resources
+C:\Users\srijana\Desktop\Tuesday\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmPatientRegistration.resources
+C:\Users\srijana\Desktop\Tuesday\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDiseasesSetUp.resources
+C:\Users\srijana\Desktop\Tuesday\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.FrmPatientsDoctor.resources
+C:\Users\srijana\Desktop\Tuesday\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.csproj.GenerateResource.Cache
+C:\Users\srijana\Desktop\Tuesday\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.exe
+C:\Users\srijana\Desktop\Tuesday\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\Hospital.exe.config
+C:\Users\srijana\Desktop\Tuesday\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\Hospital.exe
+C:\Users\srijana\Desktop\Tuesday\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\Hospital.pdb
+C:\Users\srijana\Desktop\Tuesday\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\BusinessLogic.dll
+C:\Users\srijana\Desktop\Tuesday\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\Common.dll
+C:\Users\srijana\Desktop\Tuesday\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\DBLogic.dll
+C:\Users\srijana\Desktop\Tuesday\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\Registry.dll
+C:\Users\srijana\Desktop\Tuesday\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\Crypto.dll
+C:\Users\srijana\Desktop\Tuesday\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\Skybound.VisualStyles.dll
+C:\Users\srijana\Desktop\Tuesday\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\BusinessLogic.pdb
+C:\Users\srijana\Desktop\Tuesday\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\Common.pdb
+C:\Users\srijana\Desktop\Tuesday\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\SourceGrid.xml
+C:\Users\srijana\Desktop\Tuesday\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.pdb
+G:\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\Hospital.exe.config
+G:\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\Hospital.exe
+G:\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\Hospital.pdb
+G:\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\BusinessLogic.dll
+G:\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\Common.dll
+G:\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\Language.dll
+G:\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\SComponents.dll
+G:\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\SourceGrid.dll
+G:\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\DBLogic.dll
+G:\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\Registry.dll
+G:\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\Crypto.dll
+G:\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\Skybound.VisualStyles.dll
+G:\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\BusinessLogic.pdb
+G:\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\Common.pdb
+G:\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\SourceGrid.xml
+G:\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.csprojResolveAssemblyReference.cache
+G:\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.Properties.Resources.resources
+G:\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorList.resources
+G:\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorPartTimeSalary.resources
+G:\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorSalarySheet.resources
+G:\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorFaculty.resources
+G:\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorLevel.resources
+G:\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorRegistration.resources
+G:\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmHosDepartment.resources
+G:\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmHosMasterSetup.resources
+G:\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmHosSpecialization.resources
+G:\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.FrmListOfPatientInfo.resources
+G:\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmPatientRegistration.resources
+G:\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDiseasesSetUp.resources
+G:\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.csproj.GenerateResource.Cache
+G:\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.exe
+G:\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.pdb
+G:\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.FrmRecipt.resources
+G:\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\Inventory.dll
+G:\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\CollapsibleSplitter.dll
+G:\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\ErrorManager.dll
+G:\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\Accounts.dll
+C:\Users\srijana\Desktop\Thur\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\Hospital.exe.config
+C:\Users\srijana\Desktop\Thur\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\Hospital.exe
+C:\Users\srijana\Desktop\Thur\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\Hospital.pdb
+C:\Users\srijana\Desktop\Thur\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\BusinessLogic.dll
+C:\Users\srijana\Desktop\Thur\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\Common.dll
+C:\Users\srijana\Desktop\Thur\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\Registry.dll
+C:\Users\srijana\Desktop\Thur\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\Crypto.dll
+C:\Users\srijana\Desktop\Thur\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\CollapsibleSplitter.dll
+C:\Users\srijana\Desktop\Thur\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\ErrorManager.dll
+C:\Users\srijana\Desktop\Thur\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\Skybound.VisualStyles.dll
+C:\Users\srijana\Desktop\Thur\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\BusinessLogic.pdb
+C:\Users\srijana\Desktop\Thur\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\Common.pdb
+C:\Users\srijana\Desktop\Thur\MergeHRM\NewAccSwiftGeneral\Hospital\bin\Release\SourceGrid.xml
+C:\Users\srijana\Desktop\Thur\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.csprojResolveAssemblyReference.cache
+C:\Users\srijana\Desktop\Thur\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.Properties.Resources.resources
+C:\Users\srijana\Desktop\Thur\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorList.resources
+C:\Users\srijana\Desktop\Thur\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorPartTimeSalary.resources
+C:\Users\srijana\Desktop\Thur\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorSalarySheet.resources
+C:\Users\srijana\Desktop\Thur\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorFaculty.resources
+C:\Users\srijana\Desktop\Thur\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorLevel.resources
+C:\Users\srijana\Desktop\Thur\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorRegistration.resources
+C:\Users\srijana\Desktop\Thur\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmHosDepartment.resources
+C:\Users\srijana\Desktop\Thur\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmHosMasterSetup.resources
+C:\Users\srijana\Desktop\Thur\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmHosSpecialization.resources
+C:\Users\srijana\Desktop\Thur\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.FrmListOfPatientInfo.resources
+C:\Users\srijana\Desktop\Thur\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmPatientRegistration.resources
+C:\Users\srijana\Desktop\Thur\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDiseasesSetUp.resources
+C:\Users\srijana\Desktop\Thur\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.FrmRecipt.resources
+C:\Users\srijana\Desktop\Thur\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.csproj.GenerateResource.Cache
+C:\Users\srijana\Desktop\Thur\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.exe
+C:\Users\srijana\Desktop\Thur\MergeHRM\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.pdb
+C:\Users\srijana\Desktop\HospitalProject\NewAccSwiftGeneral\Hospital\bin\Release\Hospital.exe.config
+C:\Users\srijana\Desktop\HospitalProject\NewAccSwiftGeneral\Hospital\bin\Release\Hospital.exe
+C:\Users\srijana\Desktop\HospitalProject\NewAccSwiftGeneral\Hospital\bin\Release\Hospital.pdb
+C:\Users\srijana\Desktop\HospitalProject\NewAccSwiftGeneral\Hospital\bin\Release\BusinessLogic.dll
+C:\Users\srijana\Desktop\HospitalProject\NewAccSwiftGeneral\Hospital\bin\Release\Common.dll
+C:\Users\srijana\Desktop\HospitalProject\NewAccSwiftGeneral\Hospital\bin\Release\Registry.dll
+C:\Users\srijana\Desktop\HospitalProject\NewAccSwiftGeneral\Hospital\bin\Release\Crypto.dll
+C:\Users\srijana\Desktop\HospitalProject\NewAccSwiftGeneral\Hospital\bin\Release\CollapsibleSplitter.dll
+C:\Users\srijana\Desktop\HospitalProject\NewAccSwiftGeneral\Hospital\bin\Release\ErrorManager.dll
+C:\Users\srijana\Desktop\HospitalProject\NewAccSwiftGeneral\Hospital\bin\Release\Skybound.VisualStyles.dll
+C:\Users\srijana\Desktop\HospitalProject\NewAccSwiftGeneral\Hospital\bin\Release\BusinessLogic.pdb
+C:\Users\srijana\Desktop\HospitalProject\NewAccSwiftGeneral\Hospital\bin\Release\Common.pdb
+C:\Users\srijana\Desktop\HospitalProject\NewAccSwiftGeneral\Hospital\bin\Release\SourceGrid.xml
+C:\Users\srijana\Desktop\HospitalProject\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.csprojResolveAssemblyReference.cache
+C:\Users\srijana\Desktop\HospitalProject\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.Properties.Resources.resources
+C:\Users\srijana\Desktop\HospitalProject\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorList.resources
+C:\Users\srijana\Desktop\HospitalProject\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorPartTimeSalary.resources
+C:\Users\srijana\Desktop\HospitalProject\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorSalarySheet.resources
+C:\Users\srijana\Desktop\HospitalProject\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorFaculty.resources
+C:\Users\srijana\Desktop\HospitalProject\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorLevel.resources
+C:\Users\srijana\Desktop\HospitalProject\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorRegistration.resources
+C:\Users\srijana\Desktop\HospitalProject\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmHosDepartment.resources
+C:\Users\srijana\Desktop\HospitalProject\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmHosMasterSetup.resources
+C:\Users\srijana\Desktop\HospitalProject\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmHosSpecialization.resources
+C:\Users\srijana\Desktop\HospitalProject\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.FrmListOfPatientInfo.resources
+C:\Users\srijana\Desktop\HospitalProject\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmPatientRegistration.resources
+C:\Users\srijana\Desktop\HospitalProject\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDiseasesSetUp.resources
+C:\Users\srijana\Desktop\HospitalProject\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.FrmRecipt.resources
+C:\Users\srijana\Desktop\HospitalProject\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.csproj.GenerateResource.Cache
+C:\Users\srijana\Desktop\HospitalProject\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.exe
+C:\Users\srijana\Desktop\HospitalProject\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.pdb
+C:\Users\srijana\Desktop\HospitalProject\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.Report.frmPatientReport.resources
+C:\Users\srijana\Desktop\HospitalProject\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.Report.frmPatientSetting.resources
+E:\AccSwift1\NewAccSwiftGeneral\Hospital\bin\Release\Hospital.exe.config
+E:\AccSwift1\NewAccSwiftGeneral\Hospital\bin\Release\Hospital.exe
+E:\AccSwift1\NewAccSwiftGeneral\Hospital\bin\Release\Hospital.pdb
+E:\AccSwift1\NewAccSwiftGeneral\Hospital\bin\Release\Accounts.dll
+E:\AccSwift1\NewAccSwiftGeneral\Hospital\bin\Release\BusinessLogic.dll
+E:\AccSwift1\NewAccSwiftGeneral\Hospital\bin\Release\Common.dll
+E:\AccSwift1\NewAccSwiftGeneral\Hospital\bin\Release\DBLogic.dll
+E:\AccSwift1\NewAccSwiftGeneral\Hospital\bin\Release\Inventory.dll
+E:\AccSwift1\NewAccSwiftGeneral\Hospital\bin\Release\Language.dll
+E:\AccSwift1\NewAccSwiftGeneral\Hospital\bin\Release\Registry.dll
+E:\AccSwift1\NewAccSwiftGeneral\Hospital\bin\Release\Crypto.dll
+E:\AccSwift1\NewAccSwiftGeneral\Hospital\bin\Release\CollapsibleSplitter.dll
+E:\AccSwift1\NewAccSwiftGeneral\Hospital\bin\Release\ErrorManager.dll
+E:\AccSwift1\NewAccSwiftGeneral\Hospital\bin\Release\Skybound.VisualStyles.dll
+E:\AccSwift1\NewAccSwiftGeneral\Hospital\bin\Release\BusinessLogic.pdb
+E:\AccSwift1\NewAccSwiftGeneral\Hospital\bin\Release\Common.pdb
+E:\AccSwift1\NewAccSwiftGeneral\Hospital\bin\Release\SourceGrid.xml
+E:\AccSwift1\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.csprojResolveAssemblyReference.cache
+E:\AccSwift1\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.Properties.Resources.resources
+E:\AccSwift1\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorList.resources
+E:\AccSwift1\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorPartTimeSalary.resources
+E:\AccSwift1\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorSalarySheet.resources
+E:\AccSwift1\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorFaculty.resources
+E:\AccSwift1\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorLevel.resources
+E:\AccSwift1\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDoctorRegistration.resources
+E:\AccSwift1\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmHosDepartment.resources
+E:\AccSwift1\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmHosMasterSetup.resources
+E:\AccSwift1\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmHosSpecialization.resources
+E:\AccSwift1\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.FrmListOfPatientInfo.resources
+E:\AccSwift1\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmPatientRegistration.resources
+E:\AccSwift1\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.frmDiseasesSetUp.resources
+E:\AccSwift1\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.FrmRecipt.resources
+E:\AccSwift1\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.Report.frmPatientReport.resources
+E:\AccSwift1\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.View.Report.frmPatientSetting.resources
+E:\AccSwift1\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.csproj.GenerateResource.Cache
+E:\AccSwift1\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.exe
+E:\AccSwift1\NewAccSwiftGeneral\Hospital\obj\Release\Hospital.pdb
+C:\Users\srijana\Desktop\HospitalProject\NewAccSwiftGeneral\Hospital\bin\Release\BarcodeLib.dll

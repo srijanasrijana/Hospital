@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsEmployeeCIT" targetNamespace="http://tempuri.org/dsEmployeeCIT.xsd" xmlns:mstns="http://tempuri.org/dsEmployeeCIT.xsd" xmlns="http://tempuri.org/dsEmployeeCIT.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsEmployeeCIT" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsEmployeeCIT" msprop:Generator_UserDSName="dsEmployeeCIT">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblEmployeeCIT" msprop:Generator_TableClassName="tblEmployeeCITDataTable" msprop:Generator_TableVarName="tabletblEmployeeCIT" msprop:Generator_TablePropName="tblEmployeeCIT" msprop:Generator_RowDeletingName="tblEmployeeCITRowDeleting" msprop:Generator_RowChangingName="tblEmployeeCITRowChanging" msprop:Generator_RowEvHandlerName="tblEmployeeCITRowChangeEventHandler" msprop:Generator_RowDeletedName="tblEmployeeCITRowDeleted" msprop:Generator_UserTableName="tblEmployeeCIT" msprop:Generator_RowChangedName="tblEmployeeCITRowChanged" msprop:Generator_RowEvArgName="tblEmployeeCITRowChangeEvent" msprop:Generator_RowClassName="tblEmployeeCITRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StaffName" msdata:Caption="EmpName" msprop:Generator_ColumnVarNameInTable="columnStaffName" msprop:Generator_ColumnPropNameInRow="StaffName" msprop:Generator_ColumnPropNameInTable="StaffNameColumn" msprop:Generator_UserColumnName="StaffName" type="xs:string" minOccurs="0" />
+              <xs:element name="DesignationName" msdata:Caption="Designation" msprop:Generator_ColumnVarNameInTable="columnDesignationName" msprop:Generator_ColumnPropNameInRow="DesignationName" msprop:Generator_ColumnPropNameInTable="DesignationNameColumn" msprop:Generator_UserColumnName="DesignationName" type="xs:string" minOccurs="0" />
+              <xs:element name="CITNumber" msdata:Caption="PfNumber" msprop:Generator_ColumnVarNameInTable="columnCITNumber" msprop:Generator_ColumnPropNameInRow="CITNumber" msprop:Generator_ColumnPropNameInTable="CITNumberColumn" msprop:Generator_UserColumnName="CITNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="CITAmt" msdata:Caption="PfAmount" msprop:Generator_ColumnVarNameInTable="columnCITAmt" msprop:Generator_ColumnPropNameInRow="CITAmt" msprop:Generator_ColumnPropNameInTable="CITAmtColumn" msprop:Generator_UserColumnName="CITAmt" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblImage" msprop:Generator_TableClassName="tblImageDataTable" msprop:Generator_TableVarName="tabletblImage" msprop:Generator_TablePropName="tblImage" msprop:Generator_RowDeletingName="tblImageRowDeleting" msprop:Generator_RowChangingName="tblImageRowChanging" msprop:Generator_RowEvHandlerName="tblImageRowChangeEventHandler" msprop:Generator_RowDeletedName="tblImageRowDeleted" msprop:Generator_UserTableName="tblImage" msprop:Generator_RowChangedName="tblImageRowChanged" msprop:Generator_RowEvArgName="tblImageRowChangeEvent" msprop:Generator_RowClassName="tblImageRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Logo" msprop:Generator_ColumnVarNameInTable="columnLogo" msprop:Generator_ColumnPropNameInRow="Logo" msprop:Generator_ColumnPropNameInTable="LogoColumn" msprop:Generator_UserColumnName="Logo" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

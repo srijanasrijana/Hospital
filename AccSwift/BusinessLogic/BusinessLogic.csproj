@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{73A7BD02-02B2-42A1-96F7-F920E3E7D647}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BusinessLogic</RootNamespace>
+    <AssemblyName>BusinessLogic</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Crypto, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLS\Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Date, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLS\Date.dll</HintPath>
+    </Reference>
+    <Reference Include="DBLogic, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLS\DBLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="Language, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLS\Language.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.ConnectionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.Management.Sdk.Sfc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Smo, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.Smo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SmoExtended, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.SmoExtended.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SqlEnum, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.SqlEnum.dll</HintPath>
+    </Reference>
+    <Reference Include="Registry">
+      <HintPath>..\..\DLLS\Registry.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounting\AccountingClass.cs" />
+    <Compile Include="Accounting\Budget.cs" />
+    <Compile Include="Accounting\BulkPosting.cs" />
+    <Compile Include="Accounting\CashReceipt.cs" />
+    <Compile Include="Accounting\ChequeReceipt.cs" />
+    <Compile Include="Accounting\DebtorDueDate.cs" />
+    <Compile Include="Accounting\Debtors.cs" />
+    <Compile Include="Accounting\DebtorsDueSettings.cs" />
+    <Compile Include="Accounting\DebtorsSettings.cs" />
+    <Compile Include="Accounting\LedgerCodeConfig.cs" />
+    <Compile Include="Accounting\MultipleLedger.cs" />
+    <Compile Include="Accounting\Reports\AccClass.cs" />
+    <Compile Include="Accounting\AccountGroup.cs" />
+    <Compile Include="Accounting\AccountLedgerSettings.cs" />
+    <Compile Include="Accounting\BackUpRestore.cs" />
+    <Compile Include="Accounting\BalanceSheet.cs" />
+    <Compile Include="Accounting\BalanceSheetSettings.cs" />
+    <Compile Include="Accounting\BankPayment.cs" />
+    <Compile Include="Accounting\BankReceipt.cs" />
+    <Compile Include="Accounting\BankReconciliation.cs" />
+    <Compile Include="Accounting\CashPayment.cs" />
+    <Compile Include="Accounting\Depot.cs" />
+    <Compile Include="Accounting\Journal.cs" />
+    <Compile Include="Accounting\OpeningBalance.cs" />
+    <Compile Include="Accounting\OpeningBalanceSettings.cs" />
+    <Compile Include="Accounting\Project.cs" />
+    <Compile Include="Accounting\Reports\arraylist.cs" />
+    <Compile Include="Accounting\Reports\BudgetReport.cs" />
+    <Compile Include="Accounting\Reports\BudgetReportSetting.cs" />
+    <Compile Include="Accounting\Reports\CashFlow.cs" />
+    <Compile Include="Accounting\Reports\CashFlowSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Accounting\Reports\ChequeRegisterSettings.cs" />
+    <Compile Include="Accounting\Reports\CreditNote.cs" />
+    <Compile Include="Accounting\Reports\CreditNoteRegisterSettings.cs" />
+    <Compile Include="Accounting\Reports\DebitNote.cs" />
+    <Compile Include="Accounting\Reports\DebitNoteRegisterSettings.cs" />
+    <Compile Include="Accounting\Reports\GroupBalanceSettings.cs" />
+    <Compile Include="Accounting\Reports\Transaction.cs" />
+    <Compile Include="Accounting\Reports\TransactionSettingForSummmary.cs" />
+    <Compile Include="Accounting\Reports\TransactSettings.cs" />
+    <Compile Include="Accounting\BankReconciliationSaveState.cs" />
+    <Compile Include="Accounting\Settings.cs" />
+    <Compile Include="Accounting\VoucherConfiguration.cs" />
+    <Compile Include="AmountToWords.cs" />
+    <Compile Include="AuditLog.cs" />
+    <Compile Include="CompanyInfo.cs" />
+    <Compile Include="Accounting\Contra.cs" />
+    <Compile Include="Accounting\DayBookSettings.cs" />
+    <Compile Include="CreateDB.cs" />
+    <Compile Include="Depreciation.cs" />
+    <Compile Include="District.cs" />
+    <Compile Include="Ethnicity.cs" />
+    <Compile Include="FiscalYearClosing.cs" />
+    <Compile Include="Freeze.cs" />
+    <Compile Include="Accounting\Ledger.cs" />
+    <Compile Include="Accounting\ProfitLossAccSettings.cs" />
+    <Compile Include="Accounting\Services.cs" />
+    <Compile Include="Currency.cs" />
+    <Compile Include="FormHandle.cs" />
+    <Compile Include="GetOpeningBalance.cs" />
+    <Compile Include="Global.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HOS\Diseases.cs" />
+    <Compile Include="HOS\Doctor.cs" />
+    <Compile Include="HOS\DoctorDetails.cs" />
+    <Compile Include="HOS\Hos.cs" />
+    <Compile Include="HOS\Patient.cs" />
+    <Compile Include="HOS\PatientDetails.cs" />
+    <Compile Include="HOS\Report\PatientReportSetting.cs" />
+    <Compile Include="HRM\Employee.cs" />
+    <Compile Include="HRM\EmployeeDetails.cs" />
+    <Compile Include="HRM\Hrm.cs" />
+    <Compile Include="HRM\PartTimeSalaryDetails.cs" />
+    <Compile Include="HRM\paySlipDetails.cs" />
+    <Compile Include="HRM\PaySlipGenerate.cs" />
+    <Compile Include="HRM\PFReport.cs" />
+    <Compile Include="HRM\Report\DetailEmployeeReportSettings.cs" />
+    <Compile Include="HRM\Report\EmpAnnualReportSettings.cs" />
+    <Compile Include="HRM\Report\EmployeeAdvanceSetting.cs" />
+    <Compile Include="HRM\Report\EmployeeLoanSettings.cs" />
+    <Compile Include="HRM\Report\EmployeeReportSettings.cs" />
+    <Compile Include="HRM\Report\SalaryList.cs" />
+    <Compile Include="Inventory\DamageItems.cs" />
+    <Compile Include="Inventory\OpeningQuantity.cs" />
+    <Compile Include="Inventory\OpeningQuantitySetting.cs" />
+    <Compile Include="Inventory\Product.cs" />
+    <Compile Include="Inventory\Purchase.cs" />
+    <Compile Include="Inventory\PurchaseOrder.cs" />
+    <Compile Include="Inventory\PurchaseReturn.cs" />
+    <Compile Include="Inventory\Reports\Arraylist.cs" />
+    <Compile Include="Inventory\Reports\InventoryBook.cs" />
+    <Compile Include="Inventory\Reports\InventoryBookSettings.cs" />
+    <Compile Include="Inventory\Reports\InventoryTrans.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Inventory\Reports\PurchasePartySettings.cs" />
+    <Compile Include="Inventory\Reports\PurchaseReportSettings.cs" />
+    <Compile Include="Inventory\Reports\PurchaseReturnRegisterSettings.cs" />
+    <Compile Include="Inventory\Reports\SalesPartySettings.cs" />
+    <Compile Include="Inventory\Reports\SalesReportSettings.cs" />
+    <Compile Include="Inventory\Reports\StockAgingSetting.cs" />
+    <Compile Include="Inventory\Reports\StockStatusBook.cs" />
+    <Compile Include="Inventory\Reports\StockStatusSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Inventory\Sales.cs" />
+    <Compile Include="Inventory\SalesOrder.cs" />
+    <Compile Include="Inventory\SalesReturn.cs" />
+    <Compile Include="Inventory\StockTransfer.cs" />
+    <Compile Include="Inventory\Tax.cs" />
+    <Compile Include="Inventory\VATReprotSettings.cs" />
+    <Compile Include="LangMgr.cs" />
+    <Compile Include="Leave\LeaveApproval.cs" />
+    <Compile Include="Leave\LeaveRequest.cs" />
+    <Compile Include="Leave\LeaveSetup.cs" />
+    <Compile Include="Leave\officecalender.cs" />
+    <Compile Include="ListItem.cs" />
+    <Compile Include="MDIClientWindow.cs" />
+    <Compile Include="Misc.cs" />
+    <Compile Include="Nationality.cs" />
+    <Compile Include="OptionalField.cs" />
+    <Compile Include="prop.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Accounting\TrialBalanceSettings.cs" />
+    <Compile Include="RecurringVoucher.cs" />
+    <Compile Include="Reminder.cs" />
+    <Compile Include="ReportPreference.cs" />
+    <Compile Include="SalesInvoiceModel.cs" />
+    <Compile Include="Slabs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitMaintenance.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="UserPermission.cs" />
+    <Compile Include="UserPreference.cs" />
+    <Compile Include="UserValidation.cs" />
+    <Compile Include="VoucherList.cs" />
+    <Compile Include="VoucherReference.cs" />
+    <Compile Include="Zone.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\BusinessLogic.dll" />
+    <Content Include="bin\Debug\BusinessLogic.pdb" />
+    <Content Include="bin\Debug\DBLogic.dll" />
+    <Content Include="bin\Release\BusinessLogic.dll" />
+    <Content Include="bin\Release\BusinessLogic.pdb" />
+    <Content Include="bin\Release\DBLogic.dll" />
+    <Content Include="obj\Debug\BusinessLogic.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\BusinessLogic.dll" />
+    <Content Include="obj\Debug\BusinessLogic.pdb" />
+    <Content Include="obj\Debug\Refactor\BusinessLogic.dll" />
+    <Content Include="obj\Release\BusinessLogic.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Release\BusinessLogic.dll" />
+    <Content Include="obj\Release\BusinessLogic.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\ResolveAssemblyReference.cache" />
+    <None Include="obj\Release\BusinessLogic.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Release\ResolveAssemblyReference.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="obj\Release\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsVATReport" targetNamespace="http://tempuri.org/dsVATReport.xsd" xmlns:mstns="http://tempuri.org/dsVATReport.xsd" xmlns="http://tempuri.org/dsVATReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsVATReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsVATReport" msprop:Generator_UserDSName="dsVATReport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblVATDetails" msprop:Generator_TableClassName="tblVATDetailsDataTable" msprop:Generator_TableVarName="tabletblVATDetails" msprop:Generator_TablePropName="tblVATDetails" msprop:Generator_RowDeletingName="tblVATDetailsRowDeleting" msprop:Generator_RowChangingName="tblVATDetailsRowChanging" msprop:Generator_RowEvHandlerName="tblVATDetailsRowChangeEventHandler" msprop:Generator_RowDeletedName="tblVATDetailsRowDeleted" msprop:Generator_UserTableName="tblVATDetails" msprop:Generator_RowChangedName="tblVATDetailsRowChanged" msprop:Generator_RowEvArgName="tblVATDetailsRowChangeEvent" msprop:Generator_RowClassName="tblVATDetailsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInRow="Date" msprop:Generator_ColumnPropNameInTable="DateColumn" msprop:Generator_UserColumnName="Date" type="xs:string" minOccurs="0" />
+              <xs:element name="PartyAccount" msprop:Generator_ColumnVarNameInTable="columnPartyAccount" msprop:Generator_ColumnPropNameInRow="PartyAccount" msprop:Generator_ColumnPropNameInTable="PartyAccountColumn" msprop:Generator_UserColumnName="PartyAccount" type="xs:string" minOccurs="0" />
+              <xs:element name="Voucher_No" msprop:Generator_ColumnVarNameInTable="columnVoucher_No" msprop:Generator_ColumnPropNameInRow="Voucher_No" msprop:Generator_ColumnPropNameInTable="Voucher_NoColumn" msprop:Generator_UserColumnName="Voucher_No" type="xs:string" minOccurs="0" />
+              <xs:element name="Net_Amount" msprop:Generator_ColumnVarNameInTable="columnNet_Amount" msprop:Generator_ColumnPropNameInRow="Net_Amount" msprop:Generator_ColumnPropNameInTable="Net_AmountColumn" msprop:Generator_UserColumnName="Net_Amount" type="xs:string" minOccurs="0" />
+              <xs:element name="VAT" msprop:Generator_ColumnVarNameInTable="columnVAT" msprop:Generator_ColumnPropNameInRow="VAT" msprop:Generator_ColumnPropNameInTable="VATColumn" msprop:Generator_UserColumnName="VAT" type="xs:string" minOccurs="0" />
+              <xs:element name="Total_Amount" msprop:Generator_ColumnVarNameInTable="columnTotal_Amount" msprop:Generator_ColumnPropNameInRow="Total_Amount" msprop:Generator_ColumnPropNameInTable="Total_AmountColumn" msprop:Generator_UserColumnName="Total_Amount" type="xs:string" minOccurs="0" />
+              <xs:element name="VoucherType" msprop:Generator_ColumnVarNameInTable="columnVoucherType" msprop:Generator_ColumnPropNameInRow="VoucherType" msprop:Generator_ColumnPropNameInTable="VoucherTypeColumn" msprop:Generator_UserColumnName="VoucherType" type="xs:string" minOccurs="0" />
+              <xs:element name="TypeID" msprop:Generator_ColumnVarNameInTable="columnTypeID" msprop:Generator_ColumnPropNameInRow="TypeID" msprop:Generator_ColumnPropNameInTable="TypeIDColumn" msprop:Generator_UserColumnName="TypeID" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblImage" msprop:Generator_TableClassName="tblImageDataTable" msprop:Generator_TableVarName="tabletblImage" msprop:Generator_TablePropName="tblImage" msprop:Generator_RowDeletingName="tblImageRowDeleting" msprop:Generator_RowChangingName="tblImageRowChanging" msprop:Generator_RowEvHandlerName="tblImageRowChangeEventHandler" msprop:Generator_RowDeletedName="tblImageRowDeleted" msprop:Generator_UserTableName="tblImage" msprop:Generator_RowChangedName="tblImageRowChanged" msprop:Generator_RowEvArgName="tblImageRowChangeEvent" msprop:Generator_RowClassName="tblImageRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Logo" msprop:Generator_ColumnVarNameInTable="columnLogo" msprop:Generator_ColumnPropNameInRow="Logo" msprop:Generator_ColumnPropNameInTable="LogoColumn" msprop:Generator_UserColumnName="Logo" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblVATType" msprop:Generator_TableClassName="tblVATTypeDataTable" msprop:Generator_TableVarName="tabletblVATType" msprop:Generator_TablePropName="tblVATType" msprop:Generator_RowDeletingName="tblVATTypeRowDeleting" msprop:Generator_RowChangingName="tblVATTypeRowChanging" msprop:Generator_RowEvHandlerName="tblVATTypeRowChangeEventHandler" msprop:Generator_RowDeletedName="tblVATTypeRowDeleted" msprop:Generator_UserTableName="tblVATType" msprop:Generator_RowChangedName="tblVATTypeRowChanged" msprop:Generator_RowEvArgName="tblVATTypeRowChangeEvent" msprop:Generator_RowClassName="tblVATTypeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TypeID" msprop:Generator_ColumnVarNameInTable="columnTypeID" msprop:Generator_ColumnPropNameInRow="TypeID" msprop:Generator_ColumnPropNameInTable="TypeIDColumn" msprop:Generator_UserColumnName="TypeID" type="xs:string" minOccurs="0" />
+              <xs:element name="TypeName" msprop:Generator_ColumnVarNameInTable="columnTypeName" msprop:Generator_ColumnPropNameInRow="TypeName" msprop:Generator_ColumnPropNameInTable="TypeNameColumn" msprop:Generator_UserColumnName="TypeName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="tblVATTypeKey1">
+      <xs:selector xpath=".//mstns:tblVATType" />
+      <xs:field xpath="mstns:TypeID" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="tblVATType_tblVATDetails" msdata:parent="tblVATType" msdata:child="tblVATDetails" msdata:parentkey="TypeID" msdata:childkey="TypeID" msprop:Generator_UserChildTable="tblVATDetails" msprop:Generator_ChildPropName="GettblVATDetailsRows" msprop:Generator_UserRelationName="tblVATType_tblVATDetails" msprop:Generator_RelationVarName="relationtblVATType_tblVATDetails" msprop:Generator_UserParentTable="tblVATType" msprop:Generator_ParentPropName="tblVATTypeRow" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

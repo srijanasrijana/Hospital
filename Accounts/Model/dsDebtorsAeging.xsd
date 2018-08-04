@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsDebtorsAeging" targetNamespace="http://tempuri.org/dsDebtorsAeging.xsd" xmlns:mstns="http://tempuri.org/dsDebtorsAeging.xsd" xmlns="http://tempuri.org/dsDebtorsAeging.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsDebtorsAeging" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsDebtorsAeging" msprop:Generator_UserDSName="dsDebtorsAeging">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblImage" msprop:Generator_TableClassName="tblImageDataTable" msprop:Generator_TableVarName="tabletblImage" msprop:Generator_TablePropName="tblImage" msprop:Generator_RowDeletingName="tblImageRowDeleting" msprop:Generator_RowChangingName="tblImageRowChanging" msprop:Generator_RowEvHandlerName="tblImageRowChangeEventHandler" msprop:Generator_RowDeletedName="tblImageRowDeleted" msprop:Generator_UserTableName="tblImage" msprop:Generator_RowChangedName="tblImageRowChanged" msprop:Generator_RowEvArgName="tblImageRowChangeEvent" msprop:Generator_RowClassName="tblImageRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Logo" msprop:Generator_ColumnVarNameInTable="columnLogo" msprop:Generator_ColumnPropNameInRow="Logo" msprop:Generator_ColumnPropNameInTable="LogoColumn" msprop:Generator_UserColumnName="Logo" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblDebtorsDAging" msprop:Generator_TableClassName="tblDebtorsDAgingDataTable" msprop:Generator_TableVarName="tabletblDebtorsDAging" msprop:Generator_TablePropName="tblDebtorsDAging" msprop:Generator_RowDeletingName="tblDebtorsDAgingRowDeleting" msprop:Generator_RowChangingName="tblDebtorsDAgingRowChanging" msprop:Generator_RowEvHandlerName="tblDebtorsDAgingRowChangeEventHandler" msprop:Generator_RowDeletedName="tblDebtorsDAgingRowDeleted" msprop:Generator_UserTableName="tblDebtorsDAging" msprop:Generator_RowChangedName="tblDebtorsDAgingRowChanged" msprop:Generator_RowEvArgName="tblDebtorsDAgingRowChangeEvent" msprop:Generator_RowClassName="tblDebtorsDAgingRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="S.N." msdata:Caption="VoucherNo" msprop:Generator_ColumnVarNameInTable="_columnS_N_" msprop:Generator_ColumnPropNameInRow="_S_N_" msprop:Generator_ColumnPropNameInTable="_S_N_Column" msprop:Generator_UserColumnName="S.N." type="xs:string" minOccurs="0" />
+              <xs:element name="Debtors" msdata:Caption="Date" msprop:Generator_ColumnVarNameInTable="columnDebtors" msprop:Generator_ColumnPropNameInRow="Debtors" msprop:Generator_ColumnPropNameInTable="DebtorsColumn" msprop:Generator_UserColumnName="Debtors" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalAmount" msdata:Caption="VoucherType" msprop:Generator_ColumnVarNameInTable="columnTotalAmount" msprop:Generator_ColumnPropNameInRow="TotalAmount" msprop:Generator_ColumnPropNameInTable="TotalAmountColumn" msprop:Generator_UserColumnName="TotalAmount" type="xs:string" minOccurs="0" />
+              <xs:element name="Current" msdata:Caption="LedgerName" msprop:Generator_ColumnVarNameInTable="columnCurrent" msprop:Generator_ColumnPropNameInRow="Current" msprop:Generator_ColumnPropNameInTable="CurrentColumn" msprop:Generator_UserColumnName="Current" type="xs:string" minOccurs="0" />
+              <xs:element name="First" msdata:Caption="DueDays" msprop:Generator_ColumnVarNameInTable="columnFirst" msprop:Generator_ColumnPropNameInRow="First" msprop:Generator_ColumnPropNameInTable="FirstColumn" msprop:Generator_UserColumnName="First" type="xs:string" minOccurs="0" />
+              <xs:element name="Second" msdata:Caption="DueDate" msprop:Generator_ColumnVarNameInTable="columnSecond" msprop:Generator_ColumnPropNameInRow="Second" msprop:Generator_ColumnPropNameInTable="SecondColumn" msprop:Generator_UserColumnName="Second" type="xs:string" minOccurs="0" />
+              <xs:element name="Third" msprop:Generator_ColumnVarNameInTable="columnThird" msprop:Generator_ColumnPropNameInRow="Third" msprop:Generator_ColumnPropNameInTable="ThirdColumn" msprop:Generator_UserColumnName="Third" type="xs:string" minOccurs="0" />
+              <xs:element name="Fourth" msprop:Generator_ColumnVarNameInTable="columnFourth" msprop:Generator_ColumnPropNameInRow="Fourth" msprop:Generator_ColumnPropNameInTable="FourthColumn" msprop:Generator_UserColumnName="Fourth" type="xs:string" minOccurs="0" />
+              <xs:element name="Fifth" msprop:Generator_ColumnVarNameInTable="columnFifth" msprop:Generator_ColumnPropNameInRow="Fifth" msprop:Generator_ColumnPropNameInTable="FifthColumn" msprop:Generator_UserColumnName="Fifth" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

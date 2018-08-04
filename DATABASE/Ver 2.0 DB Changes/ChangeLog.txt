@@ -1,0 +1,2 @@
+1. spLedgerDetails now returns DebitTotal and CreditTotal instead of Balance Column
+2. XML format of AccClassID and ProjectID has been changed.

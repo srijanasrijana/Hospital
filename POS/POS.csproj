@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{67C10A79-BCC7-4D45-83B5-80FF2A7C6835}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POS</RootNamespace>
+    <AssemblyName>POS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Date">
+      <HintPath>..\DLLs\Date.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmcheckout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmcheckout.Designer.cs">
+      <DependentUpon>frmcheckout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmkeypad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmkeypad.Designer.cs">
+      <DependentUpon>frmkeypad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmposlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmposlogin.Designer.cs">
+      <DependentUpon>frmposlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmpossalesinvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmpossalesinvoice.Designer.cs">
+      <DependentUpon>frmpossalesinvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmposupdategrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmposupdategrid.Designer.cs">
+      <DependentUpon>frmposupdategrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmprintingtemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmprintingtemplate.Designer.cs">
+      <DependentUpon>frmprintingtemplate.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmcheckout.resx">
+      <DependentUpon>frmcheckout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmkeypad.resx">
+      <DependentUpon>frmkeypad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmposlogin.resx">
+      <DependentUpon>frmposlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmpossalesinvoice.resx">
+      <DependentUpon>frmpossalesinvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmposupdategrid.resx">
+      <DependentUpon>frmposupdategrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmprintingtemplate.resx">
+      <DependentUpon>frmprintingtemplate.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10-v.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\100-v.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1000-v.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1296834456_xmag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1299891326_control_stop_000_small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20-v.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5-v.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50-v.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\500-v.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\About_Us.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\company.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dateIcon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dbsettings.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dbsettings1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_add1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExitButton2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\export1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\first.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gnome_window_close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\journalvoucherimage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\last.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left%282%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left%282%291.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left1%282%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginFinal 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginFinal 11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginFinal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogInImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paste1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\progress.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report-icon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right1%282%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splash1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SplashPic.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SplashPic1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tree expand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tree.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AccSwift\BusinessLogic\BusinessLogic.csproj">
+      <Project>{73a7bd02-02b2-42a1-96f7-f920e3e7d647}</Project>
+      <Name>BusinessLogic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

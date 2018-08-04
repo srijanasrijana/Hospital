@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A9249327-361F-430E-996C-DABCF143946A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Common</RootNamespace>
+    <AssemblyName>Common</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Crypto, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\BentRayS\Desktop\bin\bin\Debug\Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Design, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.TemplateEngine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.Viewing.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ClientDoc, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommLayer, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonControls, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonObjectModel, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.Controllers, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CubeDefModel, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.DataDefModel, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Date">
+      <HintPath>..\DLLs\Date.dll</HintPath>
+    </Reference>
+    <Reference Include="Language">
+      <HintPath>..\DLLs\Language.dll</HintPath>
+    </Reference>
+    <Reference Include="SComponents">
+      <HintPath>..\DLLs\SComponents.dll</HintPath>
+    </Reference>
+    <Reference Include="SmartSolutions.Controls">
+      <HintPath>..\DLLs\SmartSolutions.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="SourceGrid, Version=4.40.5321.14920, Culture=neutral, PublicKeyToken=df6f5e538749e85d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLs\SourceGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountLedger.cs" />
+    <Compile Include="AddAccClass.cs" />
+    <Compile Include="frmCountry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCountry.designer.cs">
+      <DependentUpon>frmCountry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDateConverter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDateConverter.Designer.cs">
+      <DependentUpon>frmDateConverter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmemail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmemail.Designer.cs">
+      <DependentUpon>frmemail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProgress.Designer.cs">
+      <DependentUpon>frmProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReference.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReference.Designer.cs">
+      <DependentUpon>frmReference.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportViewer.Designer.cs">
+      <DependentUpon>frmReportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectAccClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectAccClass.Designer.cs">
+      <DependentUpon>frmSelectAccClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVoucherList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVoucherList.Designer.cs">
+      <DependentUpon>frmVoucherList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVoucherRecurring.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVoucherRecurring.designer.cs">
+      <DependentUpon>frmVoucherRecurring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IEmployeeList.cs" />
+    <Compile Include="IfrmPurchaseInvoice.cs" />
+    <Compile Include="IfrmPurchaseReturn.cs" />
+    <Compile Include="IfrmSalesInvoioce.cs" />
+    <Compile Include="IfrmSalesReturn.cs" />
+    <Compile Include="Invoice.cs" />
+    <Compile Include="IVoucherReference.cs" />
+    <Compile Include="IVoucherList.cs" />
+    <Compile Include="IVoucherRecurring.cs" />
+    <Compile Include="MDIMainForm.cs" />
+    <Compile Include="Model\dsVoucherList.cs">
+      <DependentUpon>dsVoucherList.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\dsVoucherList.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsVoucherList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProductOpeningQuantity.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\rptVoucherList.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptVoucherList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SalesVoucherConfig.cs" />
+    <Compile Include="VoucherFormat.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmCountry.resx">
+      <DependentUpon>frmCountry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDateConverter.resx">
+      <DependentUpon>frmDateConverter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmemail.resx">
+      <DependentUpon>frmemail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProgress.resx">
+      <DependentUpon>frmProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReference.resx">
+      <DependentUpon>frmReference.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportViewer.resx">
+      <DependentUpon>frmReportViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectAccClass.resx">
+      <DependentUpon>frmSelectAccClass.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVoucherList.resx">
+      <DependentUpon>frmVoucherList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVoucherRecurring.resx">
+      <DependentUpon>frmVoucherRecurring.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptVoucherList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptVoucherList.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AccSwift\BusinessLogic\BusinessLogic.csproj">
+      <Project>{73a7bd02-02b2-42a1-96f7-f920e3e7d647}</Project>
+      <Name>BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HRM\HRM.csproj">
+      <Project>{edcf0f2b-d923-4580-87d0-7bd9310ac014}</Project>
+      <Name>HRM</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Model\dsVoucherList.xsc">
+      <DependentUpon>dsVoucherList.xsd</DependentUpon>
+    </None>
+    <None Include="Model\dsVoucherList.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsVoucherList.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Model\dsVoucherList.xss">
+      <DependentUpon>dsVoucherList.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\10-v.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\100-v.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1000-v.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1296834456_xmag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1299891326_control_stop_000_small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20-v.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5-v.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50-v.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\500-v.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\About_Us.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\company.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dateIcon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dbsettings.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dbsettings1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExitButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExitButton1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExitButton2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\export1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\first.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gnome_window_close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\journalvoucherimage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\last.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left%282%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left1%282%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\log.bmp" />
+    <None Include="Resources\user_remove.png" />
+    <None Include="Resources\user_accept.png" />
+    <None Include="Resources\tree.png" />
+    <None Include="Resources\tree.ico" />
+    <None Include="Resources\tree expand.png" />
+    <None Include="Resources\SplashPic1.bmp" />
+    <None Include="Resources\SplashPic.bmp" />
+    <None Include="Resources\splash1.bmp" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\right1%282%29.ico" />
+    <None Include="Resources\report-icon.gif" />
+    <None Include="Resources\refresh.png" />
+    <None Include="Resources\progress.gif" />
+    <None Include="Resources\print_preview.png" />
+    <None Include="Resources\print.ico" />
+    <None Include="Resources\paste1.png" />
+    <None Include="Resources\new window.png" />
+    <None Include="Resources\LogInImage.png" />
+    <None Include="Resources\LoginFinal.png" />
+    <None Include="Resources\LoginFinal 11.png" />
+    <None Include="Resources\LoginFinal 1.png" />
+    <None Include="Resources\login.jpg" />
+    <None Include="Resources\login.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
